@@ -24,7 +24,7 @@ footer-links:
   email: 
   facebook:
   flickr:
-  github: harald-u/harald-u.github.io
+  github: HaraldUebele/HaraldUebele.github.io
   instagram: 
   linkedin: harald-uebele-9ab3ba1a4
   pinterest:
@@ -45,8 +45,8 @@ google_analytics:
 
 # Your website URL (e.g. http://amitmerchant1990.github.io or http://www.amitmerchant.com)
 # Used for Sitemap.xml and your RSS feed
-url: http://harald-u.github.io
-enforce_ssl: https://harald-u.github.io
+url: http://HaraldUebele.github.io
+enforce_ssl: https://HaraldUebele.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)

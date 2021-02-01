@@ -10,7 +10,7 @@ tags:
   - "security"
 ---
 
-We have added an application security example to our pet project [Cloud Native Starter](https://github.com/IBM/cloud-native-starter/tree/master/security).
+We have added an application security example to our pet project [Cloud Native Starter](https://github.com/IBM/cloud-native-starter/tree/master/security){:target="_blank"}.
 
 ![Diagram]({{ site.baseurl }}/images/2020/08/diagram.png?w=1024)
 {:center: style="text-align: center"}
@@ -28,10 +28,10 @@ The functionality of our sample is this:
 
 My colleague Niklas Heidloff has blogged about the language specific application security aspects here:
 
-- [Security in Quarkus Applications via Keycloak](http://heidloff.net/article/security-quarkus-applications-keycloak/)
-- [Securing Vue.js Applications with Keycloak](http://heidloff.net/article/securing-vue-js-applications-keycloak/)
+- [Security in Quarkus Applications via Keycloak](http://heidloff.net/article/security-quarkus-applications-keycloak/){:target="_blank"}
+- [Securing Vue.js Applications with Keycloak](http://heidloff.net/article/securing-vue-js-applications-keycloak/){:target="_blank"}
 
-We also created an app security workshop from it, the material is publicly available on [Gitbook](https://ibm-developer.gitbook.io/get-started-with-security-for-your-java-microservi/).
+We also created an app security workshop from it, the material is publicly available on [Gitbook](https://ibm-developer.gitbook.io/get-started-with-security-for-your-java-microservi/){:target="_blank"}.
 
 In this article I want to talk about application security from the platform side. This is what we cover in the above mentioned workshop:
 
@@ -54,9 +54,9 @@ This is a sample setup for a workshop with the main objective to make it as comp
 3. Web-App deployment in the `default` namespace is part of the Istio service mesh although it doesn't benefit a lot from it, there is no communication with other services in the mesh. But it allows us to use the Istio Ingress for TLS encrypted HTTPS access. In a production environment I would probably place Web-App outside the mesh, maybe even outside of Kubernetes, it is only a web server.
 4. Keycloak is installed into the `default` namespace, too. It is an 'ephemeral' development install that consists only of a single pod without persistence. By placing it in the `default` namespace it can be accessed by the Web-App frontend in the browser through the Istio Ingress using TLS/HTTPS which is definitely a requirement for an IAM -- you do not want your authentication information flowing unencrypted through the Internet!  
     Making it part of the Service Mesh itself automatically enables encryption in the communication with the Web-API and Articles services; both call Keycloak to verify the validity of the JWT token passed by the frontend.  
-    In a production setup, Keycloak would likely be installed in its own namespace. You could either make this namespace part of the Istio service mesh, too. Or you could [configure the Istio Egress](https://istio.io/latest/docs/tasks/traffic-management/egress/) to enable outgoing calls from the Web-API and Articles services to a Keycloak service outside the mesh. Or maybe you even have an existing Keycloak instance running somewhere else. Then you would also use the Istio Egress to get access to it.
+    In a production setup, Keycloak would likely be installed in its own namespace. You could either make this namespace part of the Istio service mesh, too. Or you could [configure the Istio Egress](https://istio.io/latest/docs/tasks/traffic-management/egress/){:target="_blank"} to enable outgoing calls from the Web-API and Articles services to a Keycloak service outside the mesh. Or maybe you even have an existing Keycloak instance running somewhere else. Then you would also use the Istio Egress to get access to it.
 
-We are using [Keycloak](https://www.keycloak.org/) in our workshop setup, it is open source and widely used. Actually any OpenID Connect (OIDC) compliant IAM service should work. Another good exampe would be the [App ID service](https://cloud.ibm.com/docs/appid?topic=appid-about) on IBM Cloud which has the advantage of being a managed service so you dan't have to manage it.
+We are using [Keycloak](https://www.keycloak.org/){:target="_blank"} in our workshop setup, it is open source and widely used. Actually any OpenID Connect (OIDC) compliant IAM service should work. Another good exampe would be the [App ID service](https://cloud.ibm.com/docs/appid?topic=appid-about){:target="_blank"} on IBM Cloud which has the advantage of being a managed service so you dan't have to manage it.
 
 ### Accessing the application with TLS
 
@@ -64,18 +64,18 @@ In this example we are using Istio to help secure our application. We will use t
 
 From a Kubernetes networking view, the Istio Ingress is a Kubernetes service of type LoadBalancer. It requires an external IP address to make it accessible from the Internet. And it will also need a DNS entry in order to be able to create a TLS certificate and to configure the Istio Ingress Gateway correctly.
 
-How you do that is dependent on your Kubernetes implementation and your Cloud provider. In our example we use the IBM Cloud and the IBM Cloud Kubernetes Service (IKS). For IKS the process of exposing the Istio Ingress with a DNS name and TLS is documented in [this article](https://cloud.ibm.com/docs/containers?topic=containers-istio-mesh#tls) and [here based on the Istio Bookinfo sample](https://cloud.ibm.com/docs/containers?topic=containers-istio-mesh#istio_expose_bookinfo_tls).
+How you do that is dependent on your Kubernetes implementation and your Cloud provider. In our example we use the IBM Cloud and the IBM Cloud Kubernetes Service (IKS). For IKS the process of exposing the Istio Ingress with a DNS name and TLS is documented in [this article](https://cloud.ibm.com/docs/containers?topic=containers-istio-mesh#tls){:target="_blank"} and [here based on the Istio Bookinfo sample](https://cloud.ibm.com/docs/containers?topic=containers-istio-mesh#istio_expose_bookinfo_tls){:target="_blank"}.
 
 The documentation is very good, I won't repeat it here. But a little background may be required: When you issue the command to create a DNS entry for the load-balancer (`ibmcloud ks nlb-dns create ...`), in the background this command also produces a Let's Encrypt TLS certificate for this DNS entry and it stores this TLS certificate in a Kubernetes secret in the `default` namespace. The Istio Ingress is running in the `istio-system` namespace, it cannot access a secret in `default`. That is the reason for the intermediate step to export the secret with the certificate and recreate it in `istio-system`.
 
 So how is storing a TLS certificate in a Kubernetes secret secure, it is only base64 encoded and not encrypted? That is true but there is are two possible solutions:
 
-1. Use a certificate management system like [IBM Certificate Manager](https://cloud.ibm.com/docs/certificate-manager?topic=certificate-manager-about-certificate-manager): Certificate Manager uses the Hardware Security Module (HSM)-based [IBM Key Protect service](https://cloud.ibm.com/docs/key-protect?topic=key-protect-getting-started-tutorial) for storing root encryption keys. Those root encryption keys are used to wrap per-tenant data encryption keys, which are in turn used to encrypt per-certificate keys which are then stored securely within Certificate Manger databases.
-2. Add a Key Management System (KMS) to the IKS cluster on the IBM Cloud. There is even a free option, [IBM Key Protect for IBM Cloud](https://cloud.ibm.com/docs/key-protect?topic=key-protect-getting-started-tutorial), or for the very security conscious there is the [IBM Hyper Protect Crypto Service](https://cloud.ibm.com/docs/hs-crypto?topic=hs-crypto-get-started). Both can be used to encrypt the etcd server of the Kubernetes API server and Kubernetes secrets. You would need to manage the TLS certificates yourself, though.
+1. Use a certificate management system like [IBM Certificate Manager](https://cloud.ibm.com/docs/certificate-manager?topic=certificate-manager-about-certificate-manager){:target="_blank"}: Certificate Manager uses the Hardware Security Module (HSM)-based [IBM Key Protect service](https://cloud.ibm.com/docs/key-protect?topic=key-protect-getting-started-tutorial){:target="_blank"} for storing root encryption keys. Those root encryption keys are used to wrap per-tenant data encryption keys, which are in turn used to encrypt per-certificate keys which are then stored securely within Certificate Manger databases.
+2. Add a Key Management System (KMS) to the IKS cluster on the IBM Cloud. There is even a free option, [IBM Key Protect for IBM Cloud](https://cloud.ibm.com/docs/key-protect?topic=key-protect-getting-started-tutorial){:target="_blank"}, or for the very security conscious there is the [IBM Hyper Protect Crypto Service](https://cloud.ibm.com/docs/hs-crypto?topic=hs-crypto-get-started){:target="_blank"}. Both can be used to encrypt the etcd server of the Kubernetes API server and Kubernetes secrets. You would need to manage the TLS certificates yourself, though.
 
 Or use both, the certificate management system to manage your TLS certificates and the KMS for the rest.
 
-We didn't cover adding a certificate management system or a KMS in our workshop to keep it simple. But there is a huge documentation section on many aspects of [protecting sensitive information in your cluster](https://cloud.ibm.com/docs/containers?topic=containers-encryption) on the IBM Cloud:
+We didn't cover adding a certificate management system or a KMS in our workshop to keep it simple. But there is a huge documentation section on many aspects of [protecting sensitive information in your cluster](https://cloud.ibm.com/docs/containers?topic=containers-encryption){:target="_blank"} on the IBM Cloud:
 
 ![]({{ site.baseurl }}/images/2020/09/cs_encrypt_ov_kms.png)
 {:center: style="text-align: center"}
@@ -85,7 +85,7 @@ _Picture 3 (c) IBM Corp._
 
 ### Istio Security
 
-In my opinion, Istio is a very important and useful addition to Kubernetes when you work with Microservices architectures. It has features for traffic management, security, and observability. The Istio documentation has a very good section on [Istio security features](https://istio.io/latest/docs/concepts/security/).
+In my opinion, Istio is a very important and useful addition to Kubernetes when you work with Microservices architectures. It has features for traffic management, security, and observability. The Istio documentation has a very good section on [Istio security features](https://istio.io/latest/docs/concepts/security/){:target="_blank"}.
 
 In our example we set up Istio with "pod auto-injection" enabled for the `default` namespace. This means that into every pod that is deployed into the `default` namespace, Istio deploys an additional container, the Envoy proxy. Istio then changes the routing information in the pod so that all other containers in the pod communicate with services in other pods only through this proxy. For example, when the Web-API service calls the REST API of the Articles service, the Web-API container in the Web-API pod connects to the Envoy proxy in the Web-API pod which makes the request to the Envoy proxy in the Articles pod which passes the request to the Articles container. Sounds complicated but it happens automagically.
 
@@ -102,7 +102,7 @@ With the certificates in place in all the pods, all the communication in the ser
 
 The Istio CA even performs automatic certificate and key rotation. Imagine what you would need to add to your code to implement this yourself!
 
-You still need to configure the [Istio Ingress Gateway](https://istio.io/latest/docs/tasks/traffic-management/ingress/secure-ingress/). "Gateway" is an Istio configuration resource. This is what its definition looks like
+You still need to configure the [Istio Ingress Gateway](https://istio.io/latest/docs/tasks/traffic-management/ingress/secure-ingress/){:target="_blank"}. "Gateway" is an Istio configuration resource. This is what its definition looks like
 
 ```yaml
 apiVersion: networking.istio.io/v1alpha3
@@ -202,4 +202,4 @@ The PeerAuthentication policy can be set mesh wide, for a namespace, or for a wo
 
 Once this definition is applied, only mTLS encrypted traffic is possible. You cannot access any service running inside the Istio service mesh by calling it on its NodePort. This also means that services running inside the service mesh can not call services outside without going through an Istio Egress Gateway.
 
-You can do even more with Istio _without changing a line of your code_. The [Istio security concepts](https://istio.io/latest/docs/concepts/security/) and [security tasks](https://istio.io/latest/docs/tasks/security/) gives a good overview of what is possible.
+You can do even more with Istio _without changing a line of your code_. The [Istio security concepts](https://istio.io/latest/docs/concepts/security/){:target="_blank"} and [security tasks](https://istio.io/latest/docs/tasks/security/){:target="_blank"} gives a good overview of what is possible.

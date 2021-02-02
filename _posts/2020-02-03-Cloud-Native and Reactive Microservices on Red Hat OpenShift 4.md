@@ -10,8 +10,10 @@ My colleague Niklas Heidloff has started to create [another version of our Cloud
 The reactive version of Cloud Native Starter is based on [Quarkus](https://quarkus.io/){:target="_blank"} ("Supersonic Subatomic Java"), uses Apache Kafka for messaging, and PostgreSQL for data storage of the articles service. Postgres is accessed via the reactive SQL client. Niklas has blogged about all of the details.
 
 ![]({{ site.baseurl }}/images/2020/02/architecture-small.png)
+{:center: style="text-align: center"}
+_Cloud Native Starter Reactive: High Level Architecture_
+{:center}
 
-Cloud Native Starter Reactive: High Level Architecture
 
 The deployment on OpenShift is very similar to the deployment of the original Cloud Native Starter which I have written about in my last [blog](https://haralduebele.blog/2020/01/23/cloud-native-starter-on-red-hat-openshift-4/){:target="_blank"}.
 

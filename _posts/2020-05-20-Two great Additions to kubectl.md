@@ -22,7 +22,7 @@ The Github repo has installation instructions for macOS and diferent flavours of
 
 'kubens' without a parameter will list all namespaces and with 'fzf' installed too you have a selectable list:
 
-![](https://{{ site.baseurl }}/images/2020/05/peek-2020-05-20-09-13.gif?w=628)
+![]({{ site.baseurl }}/images/2020/05/peek-2020-05-20-09-13.gif)
 
 I think that is even better than 'oc projects'!
 
@@ -43,7 +43,7 @@ $ kubectx IKS=knative/br1td2of0j1q10rc8aj0
 
 And then you get a list with recognizable names:
 
-![]({{ site.baseurl }}/images/2020/05/peek-2020-05-20-10-14.gif?w=625)
+![]({{ site.baseurl }}/images/2020/05/peek-2020-05-20-10-14.gif)
 
 You can now switch via the list. In addition, with 'kubectx -' you can switch to the previous context.
 

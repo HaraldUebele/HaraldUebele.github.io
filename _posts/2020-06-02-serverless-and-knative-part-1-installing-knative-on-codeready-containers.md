@@ -43,4 +43,4 @@ I have started and stopped CRC many times now and it doesn't have the issues tha
 
 As a future exercise I will test the Knative Add-on for the IBM Cloud Kubernetes Service. This installs Knative 0.14 together with Istio on top of Kubernetes and requires a minimum of 3 worker nodes with 4 CPUs and 16 GB om memory (b3c.4x16 is the machine specification).
 
-In the next blog article I will cover [Knative Serving](https://haralduebele.blog/2020/06/03/serverless-and-knative-part-2-knative-serving/) with an example from the Knative documentation.
+In the next blog article I will cover [Knative Serving](https://haralduebele.github.io/2020/06/03/serverless-and-knative-part-2-knative-serving/) with an example from the Knative documentation.

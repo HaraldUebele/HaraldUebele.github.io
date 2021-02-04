@@ -233,7 +233,7 @@ The result should be 'hello'.
 
 ![Red Hat OpenShift]({{ site.baseurl }}/images/2020/04/logotype-rh-openshift-360x96_0.png)
 
-I have tested this with [CodeReady Containers](https://haralduebele.blog/2019/09/13/red-hat-openshift-4-on-your-laptop/) (CRC) and on [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started). CRC was a bit flaky, sometimes it would build the image, create the deployment config but wouldn't start the pod.
+I have tested this with [CodeReady Containers](https://haralduebele.github.io/2019/09/13/red-hat-openshift-4-on-your-laptop/) (CRC) and on [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started). CRC was a bit flaky, sometimes it would build the image, create the deployment config but wouldn't start the pod.
 
 On OpenShift, the container image is built using [Source-to-Image](https://docs.openshift.com/container-platform/4.3/builds/understanding-image-builds.html#build-strategy-s2i_understanding-image-builds) (s2i) and this requires a different Maven extension:
 

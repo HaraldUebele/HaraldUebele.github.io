@@ -87,7 +87,7 @@ A REST API call to the Authors service using 'curl' is then build like this:
 
 ```sh
 $ curl -H 'Host: authors.default.example.com' http://192.168.39.169:30265/api/v1/getauthor?name=Harald%20Uebele
-{"name":"Harald Uebele","twitter":"@harald\_u","blog":"https://haralduebele.blog"}
+{"name":"Harald Uebele","twitter":"@harald_u","blog":"https://haralduebele.blog"}
 ```
 
 In this way the Ingress gets the request with the correct host name in the request header.

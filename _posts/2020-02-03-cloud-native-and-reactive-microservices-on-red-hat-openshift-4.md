@@ -15,7 +15,7 @@ _Cloud Native Starter Reactive: High Level Architecture_
 {:center}
 
 
-The deployment on OpenShift is very similar to the deployment of the original Cloud Native Starter which I have written about in my last [blog](https://haralduebele.blog/2020/01/23/cloud-native-starter-on-red-hat-openshift-4/){:target="_blank"}.
+The deployment on OpenShift is very similar to the deployment of the original Cloud Native Starter which I have written about in my last [blog](https://haralduebele.github.io/2020/01/23/cloud-native-starter-on-red-hat-openshift-4/){:target="_blank"}.
 
 The services (web-app, web-api, authors, articles) are build locally in Docker, then tagged with an image path suitable for the OpenShift image repository, then pushed with Docker into the internal repository.
 

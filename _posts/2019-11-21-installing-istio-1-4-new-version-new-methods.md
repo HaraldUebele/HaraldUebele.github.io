@@ -5,12 +5,12 @@ title: "Installing Istio 1.4 - New version, new methods"
 date: "2019-11-21"
 ---
 
-![]({{ site.baseurl }}/images/2019/11/istio1.4.png?w=796)
-
 The latest release of Istio -- 1.4.x -- is changing the way Istio is installed. There are now two methods, the method using Helm will be deprecated in the future:
 
 - Istio Operator, this is in alpha state at the moment and seems to be similar to the way Red Hat Service Mesh is installed (see [here](https://haralduebele.github.io/2019/09/17/openshift-service-mesh-aka-istio-on-codeready-containers/){:target="_blank"})
 - Using `istioctl`
+
+![]({{ site.baseurl }}/images/2019/11/istio1.4.png?w=796)
 
 I have tried the `istioctl` method with a Kubernetes cluster on IBM Cloud (IKS) and want to document my findings.
 
@@ -98,5 +98,5 @@ Then login with admin/admin:
 
 The same command works for Prometheus (monitoring) and Jaeger (tracing), too:
 
-`$ istioctl dashboard prometheus  
-$ istioctl dashboard jaeger`
+`$ istioctl dashboard prometheus`  
+`$ istioctl dashboard jaeger`

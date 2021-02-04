@@ -277,11 +277,12 @@ p > img {
   }
 }
 
+// No avatar
 .site-avatar {
   float: left;
-  width: 70px;
+  width: 0px;
   height: 70px;
-  margin-right: 15px;
+  margin-right: 0px;
 
   @include mobile {
     float: none;
@@ -308,7 +309,7 @@ p > img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -322,6 +323,7 @@ p > img {
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
 
   @include mobile {
@@ -332,7 +334,7 @@ p > img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
 
   @include mobile {

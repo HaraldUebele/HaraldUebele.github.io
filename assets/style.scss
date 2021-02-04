@@ -448,8 +448,9 @@ body:after {
 }
 
 .post h1{
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  text-align: center;
+  //font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'IBM Plex Serif', serif;
+  text-align: left;
   font-weight: bold;
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
@@ -457,8 +458,9 @@ body:after {
 }
 
 .page h1{
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  text-align: center;
+  //font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'IBM Plex Serif', serif;
+  text-align: left;
   font-weight: bold;
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
@@ -466,13 +468,13 @@ body:after {
 }
 
 .author_title{
-  text-align: center;
+  text-align: left;
   color: #939aa1;
   letter-spacing: 2px;
 }
 
 .post_date{
-  text-align: center;
+  text-align: left;
   color: #939aa1;
 }
 

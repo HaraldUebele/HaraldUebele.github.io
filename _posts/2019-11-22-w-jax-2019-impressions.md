@@ -44,9 +44,8 @@ And finally Jeremias Werner, Senior Software Developer at the IBM Böblingen lab
 Between the talks we were quite busy at the booth:
 
 ![]({{ site.baseurl }}/images/2019/11/w-jax1.jpg?w=1024)
-{:center: style="text-align: center"}
-_Some people work at a new career path as movie star :-)_
-{:center}
+
+Some people work at a new career path as movie star :-)
 
 ![]({{ site.baseurl }}/images/2019/11/w-jax6.jpg?w=1024)
 {:center: style="text-align: center"}

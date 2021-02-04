@@ -60,9 +60,8 @@ The team on day 1:
 
 ![]({{ site.baseurl }}/images/2019/11/w-jax7.jpg?w=1024)
 {:center: style="text-align: center"}
-_X_
+_l2r: Andrea, Niklas, Miguel, Harald, Miriam, Jason, Thomas_
 {:center}
-l2r: Andrea, Niklas, Miguel, Harald, Miriam, Jason, Thomas
 
 Thomas posted a [cool video](https://twitter.com/i/status/1192094720559865858){:target="_blank"} on Twitter:
 

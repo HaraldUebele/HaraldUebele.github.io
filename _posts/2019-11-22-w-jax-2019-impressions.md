@@ -65,7 +65,7 @@ _l2r: Andrea, Niklas, Miguel, Harald, Miriam, Jason, Thomas_
 
 Thomas posted a [cool video](https://twitter.com/i/status/1192094720559865858){:target="_blank"} on Twitter:
 
-![](https://twitter.com/i/status/1192094720559865858)
+![]({{ site.baseurl }}/images/2019/11/twitter.png)
 
 Feierabendbier at day 2 ... and we do the [coolest boomerangs](https://twitter.com/Jessieevaline/status/1192151519325503490){:target="_blank"}!
 

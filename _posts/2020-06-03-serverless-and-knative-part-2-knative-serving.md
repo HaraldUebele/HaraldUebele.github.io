@@ -9,7 +9,7 @@ tags:
   - "serverless"
 ---
 
-In the [first part of this series](https://harald-u.github.io/Installing-Knative/) I went through the installation of Knative on CodeReady Containers which is basically Red Hat OpenShift 4.4 running on a notebook.
+In the [first part of this series](https://haralduebele.github.io/Installing-Knative/) I went through the installation of Knative on CodeReady Containers which is basically Red Hat OpenShift 4.4 running on a notebook.
 
 In this second part I will cover Knative Serving, which is responsible for deploying and running containers, also networking and auto-scaling. Auto-scaling allows scale to zero and is probably the main reason why Knative is referred to as Serverless platform.
 
@@ -557,4 +557,4 @@ There are new places to look for information as to why a Knative service doesn't
 
 ---
 
-In my next blog article in this series I will talk about [Knative Eventing](https://harald-u.github.io/Knative-Eventing/).
+In my next blog article in this series I will talk about [Knative Eventing](https://haralduebele.github.io/Knative-Eventing/).

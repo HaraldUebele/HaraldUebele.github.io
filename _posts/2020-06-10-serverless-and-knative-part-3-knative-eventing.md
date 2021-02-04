@@ -8,7 +8,7 @@ tags:
   - "serverless"
 ---
 
-This is part 3 of my blog series about Serverless and Knative. I covered [Installing Knative on CodeReady Containers](https://harald-u.github.io/Installing-Knative/) in part 1 and [Knative Serving](https://harald-u.github.io/Knative-Serving/) in part 2.
+This is part 3 of my blog series about Serverless and Knative. I covered [Installing Knative on CodeReady Containers](https://haralduebele.github.io/Installing-Knative/) in part 1 and [Knative Serving](https://haralduebele.github.io/Knative-Serving/) in part 2.
 
 ![Knative logo]({{ site.baseurl }}/images/2020/06/m5EQknfW_400x400.jpg)
 

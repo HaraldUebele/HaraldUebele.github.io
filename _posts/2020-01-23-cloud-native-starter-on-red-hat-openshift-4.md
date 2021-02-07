@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 2020
+categories: [Kubernetes,OpenShift]
 title: "Cloud Native Starter on Red Hat OpenShift 4"
 date: "2020-01-23"
 ---

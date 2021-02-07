@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /categories/
-title: Archives
+title: Categories
 ---
 
 

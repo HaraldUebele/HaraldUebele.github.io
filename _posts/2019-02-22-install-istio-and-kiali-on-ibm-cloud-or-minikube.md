@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 2019
+categories: [2019,Kubernetes,Istio]
 title: "Install Istio and Kiali on IBM Cloud or Minikube"
 date: "2019-02-22"
 ---

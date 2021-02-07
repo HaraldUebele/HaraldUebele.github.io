@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 2019
+categories: [2019,Kubernetes,Istio,Microservices]
 title: "Managing Microservices Traffic with Istio"
 date: "2019-03-11"
 ---

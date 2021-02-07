@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 2020
+categories: [Kubernetes,OpenShift,Reactive]
 title: "Cloud Native and Reactive Microservices on Red Hat OpenShift 4"
 date: "2020-02-03"
 ---

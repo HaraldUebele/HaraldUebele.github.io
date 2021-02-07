@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 2019
+categories: [2019,Kubernetes,OpenShift]
 title: "Deploying the Cloud Native Starter microservices on Minishift"
 date: "2019-07-03"
 ---

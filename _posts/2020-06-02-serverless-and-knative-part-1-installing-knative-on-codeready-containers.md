@@ -2,7 +2,7 @@
 layout: post
 title: "Serverless and Knative - Part 1: Installing Knative on CodeReady Containers"
 date: "2020-06-02"
-categories: 2020
+categories: [Knative,Kubernetes,Serverless]
 tags: 
   - "knative"
   - "kubernetes"

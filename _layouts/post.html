@@ -6,7 +6,7 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   <div>
-    <p class="author_title">Written on {{ page.date | date: "%B %e, %Y" }}</p>
+    <p class="author_title">Written on {{ page.date | date: "%B %e, %Y" }}, {% include read_time.html %}</p>
     {% if page.last_modified_at %}
     <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
     {% endif %}
@@ -31,10 +31,6 @@ layout: default
   <div>
     <p class="text-center"><span class="share-box">Share via</span> <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a></p>
   </div>
-
-  <!--<div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>-->
 
   {% include disqus.html %}
 </article>

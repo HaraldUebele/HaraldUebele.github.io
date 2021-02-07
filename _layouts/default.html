@@ -47,7 +47,7 @@
         <div class="container">
           <footer class="footer">
             {% include svg-icons.html %}
-            <p>&copy; {{ site.author }}, {{ site.year }}</p>
+            <p>&copy; {{ site.author }}, {{ site.time | date: '%Y' }}</p>
           </footer>
         </div>
       </div>

@@ -5,4 +5,5 @@ title: This is a new article
 date: "2021-MM-DD"
 tag: "2020"
 published: false
+excerpt_separator: <!--more-->
 ---

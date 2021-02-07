@@ -3,6 +3,7 @@ layout: post
 categories: [Kubernetes]
 title: (Maybe) Learn something new about Minikube
 date: "2021-02-07"
+tag: "2021"
 ---
 
 I wrote my first blog that involved [Minikube](https://minikube.sigs.k8s.io/docs/){:target="_blank"} in February 2019. And I still use Minikube a lot. 

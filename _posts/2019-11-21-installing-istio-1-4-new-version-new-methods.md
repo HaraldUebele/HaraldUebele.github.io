@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Kubernetes,Istio]
+categories: [2019,Kubernetes,Istio]
 title: "Installing Istio 1.4 - New version, new methods"
 date: "2019-11-21"
 ---

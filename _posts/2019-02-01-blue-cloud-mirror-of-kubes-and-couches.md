@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: 2019
 title: "Blue Cloud Mirror - Of Kubes and Couches"
 date: "2019-02-01"
 ---

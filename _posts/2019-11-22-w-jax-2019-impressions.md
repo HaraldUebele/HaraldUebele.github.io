@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: 2019
 title: "W-JAX 2019 Impressions"
 date: "2019-11-22"
 ---

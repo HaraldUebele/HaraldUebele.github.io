@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Kubernetes]
+categories: [2019,Kubernetes]
 title: "Moving from Minikube to IBM Cloud Kubernetes Service"
 date: "2019-04-04"
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: 2019
 title: "Blue Cloud Mirror -- (Don't) Open The Doors!"
 date: "2019-02-17"
 ---

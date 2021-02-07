@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Kubernetes,Istio,OpenShift]
+categories: [2019,Kubernetes,Istio,OpenShift]
 title: "OpenShift Service Mesh aka Istio on CodeReady Containers"
 date: "2019-09-17"
 ---

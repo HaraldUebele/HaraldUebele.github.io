@@ -16,9 +16,9 @@ When I looked a little closer into the Minikube documentation I realized that Mi
 
 ## 1. Minikube Docker Driver
 
-The [Docker driver](https://minikube.sigs.k8s.io/docs/drivers/docker/){:target="_blank"} became experimental somewhere around Minikube Version 1.8 in early 2020. It is now (Minikube Version 1.17) a preferred driver for Linux, macOs, and Windows.
+The [Docker driver](https://minikube.sigs.k8s.io/docs/drivers/docker/){:target="_blank"} became experimental somewhere around Minikube Version 1.8 in early 2020. It is now (Minikube Version 1.17) a preferred driver for Linux, macOS, and Windows.
 
-If you use Minikube a lot, you may have set configuration options, e.g. for the driver. Check with:
+If you use Minikube a lot, at some point you may have set configuration options, e.g. for the driver. Check with:
 
 ```sh
 minikube config view
@@ -38,15 +38,15 @@ You may have a setting like:
 
 That is ancient, `vm-driver` as a parameter has been deprecated for quite some time.
 
-Initial start of a Minikube clsuter will take some time because it needs to download the Docker image but consecutive starts should be a lot faster.
+Initial start of a Minikube cluster will take some time because it needs to download the Docker image but consecutive starts should be a lot faster.
 
-But I found more interesting features that I didn't know before:
+I found more interesting features that I didn't know before:
 
 ## 2. Minikube Service
 
 The command `minikube service` makes working with Kubernetes services a lot easier.
 
-1. Get a list of all services, if the service is of type "NodePort", display the URL:
+1. Get a list of all services. If the service is of type "NodePort", display the URL:
 
     ```sh
     minikube service list
@@ -77,9 +77,11 @@ The command `minikube service` makes working with Kubernetes services a lot easi
     minikube service todo
     ```
 
-    I don't know what happens if call your service 'list', though :-)
+    will open the URL for the `todo` service in your browser.
 
-4. Get the URL of a specific service:
+    _I don't know what happens if call your service 'list', though :-)_
+
+4. Get the URL of a specific service. Helpful in scripts:
 
     ```sh
     minikube service todo --url
@@ -109,17 +111,17 @@ istio-ingressgateway   LoadBalancer   10.106.56.168    <pending>     15021:32561
 ...
 ```
 
-In this scenario, in a separate terminal session execute:
+Now, in a separate terminal session execute:
 
 ```sh
 minikube tunnel
 ```
 
-`minikube tunnel` creates a network route on the host to the service  using the cluster’s IP address as a gateway. The tunnel command exposes the external IP directly to any program running on the host operating system.
+`minikube tunnel` creates a network route on the host to the service using the cluster’s IP address as a gateway. The tunnel command exposes the external IP directly to any program running on the host operating system.
 
-The command requires root rights (sudo) because it creates a network configuration.
+Note: The command requires root rights (sudo) because it creates a network configuration.
 
-If you check the service now, result will look similar to:
+If you check the service now, the result will look similar to:
 
 Output:
 
@@ -134,9 +136,9 @@ You can then use services like nip.io or xip.io to create dummy DNS entries, lik
 
 ## 4. Minikube Logviewer
 
-Installing something like an ELK stack may be a bit overwhelming for Minikube. A while ago I found the [Minikube Logviewer](https://github.com/ivans3/minikube-log-viewer){:target="_blank"} which is quite simple. 
+Central logging is important and helpful. But installing something like an ELK stack may be a bit overwhelming for Minikube. A while ago I found the [Minikube Logviewer](https://github.com/ivans3/minikube-log-viewer){:target="_blank"} which is quite simple and doesn't require a lot of resources. 
 
-Recently I found out that it is available as a Minikube addon. Enable it with
+Now I found out that it is available as a Minikube addon, too. Enable it with
 
 ```sh
 minikube addons enable logviewer

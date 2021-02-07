@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Kubernetes,OpenShift,Quarkus,Container]
+categories: 2020
 title: "Deploy your Quarkus applications on Kubernetes. Almost automatically!"
 date: "2020-04-03"
 tags: 

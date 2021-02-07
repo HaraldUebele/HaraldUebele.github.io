@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Kubernetes]
+categories: 2020
 title: "Two great additions to 'kubectl'"
 date: "2020-05-20"
 tags: 

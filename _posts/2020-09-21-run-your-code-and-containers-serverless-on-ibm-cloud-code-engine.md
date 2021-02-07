@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Kubernetes,Knative,Serverless]
+categories: 2020
 title: "Run your Code and Containers Serverless on IBM Cloud Code Engine"
 date: "2020-09-21"
 ---

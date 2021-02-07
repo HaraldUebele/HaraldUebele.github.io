@@ -14,12 +14,6 @@ description: Everything Cloud
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: 
 
-# Archives
-collections:
-  archives:
-    output: true
-    permalink: /archives/:path/
-
 #
 # Flags below are optional
 #

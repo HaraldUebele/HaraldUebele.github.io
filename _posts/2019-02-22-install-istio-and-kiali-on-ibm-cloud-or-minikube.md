@@ -3,6 +3,7 @@ layout: post
 categories: [Kubernetes,Istio]
 title: "Install Istio and Kiali on IBM Cloud or Minikube"
 date: "2019-02-22"
+tag: "2019"
 ---
 
 I recently started to look into Istio and Kiali.

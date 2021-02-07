@@ -2,10 +2,7 @@
 title: "Serverless and Knative – Part 3: Knative Eventing"
 date: "2020-06-10"
 categories: [Knative,Kubernetes,Serverless]
-tags: 
-  - "knative"
-  - "kubernetes"
-  - "serverless"
+tag: "2020"
 ---
 
 This is part 3 of my blog series about Serverless and Knative. I covered [Installing Knative on CodeReady Containers](https://haralduebele.github.io/Installing-Knative/) in part 1 and [Knative Serving](https://haralduebele.github.io/Knative-Serving/) in part 2.

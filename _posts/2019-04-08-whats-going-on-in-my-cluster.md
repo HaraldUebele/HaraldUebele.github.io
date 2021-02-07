@@ -3,6 +3,7 @@ layout: post
 categories: [Kubernetes,Observability]
 title: "What's Going On (in my cluster)?"
 date: "2019-04-08"
+tag: "2019"
 ---
 
 Logging and Monitoring have always been important but in a distributed microservices architecture on a Kubernetes cluster it is even more important: watching the ever changing components of a cluster is like "guarding a bag of fleas" as the German proverb says. Even our demo "[Cloud Native Starter](https://github.com/nheidloff/cloud-native-starter){:target="_blank"}" has at least 4 or 5 pods running that all create logs that at some point when something doesn't work you need to look at. There are plenty of articles around logging in a Kubernetes cluster with many different solutions. What is important to me as a developer is that I don't want to care about maintaining it. I need a logging and monitoring solution but I want somebody else to keep it running for me. Fortunately, IBM Cloud is offering that in the form of "IBM Log Analysis with LogDNA" and "IBM Cloud Monitoring with Sysdig".

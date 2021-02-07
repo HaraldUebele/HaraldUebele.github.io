@@ -3,11 +3,7 @@ layout: post
 title: "Knative Example: Deploying a Microservices Application"
 date: "2020-07-02"
 categories: [Knative,Kubernetes,Serverless,Microservices]
-tags: 
-  - "knative"
-  - "kubernetes"
-  - "microservices"
-  - "serverless"
+tag: "2020"
 ---
 
 I have written about Knative Installation, Knative Serving, and Knative Eventing. I have used the simple HelloWorld sample application which is perfectly fine to learn Knative. But I wanted to apply what I have learned with an example that is closer to reality. If you have followed my blog, you should know our pet project [Cloud Native Starter](https://github.com/IBM/cloud-native-starter). It contains sample code that demonstrates how to get started with cloud-native applications and microservice based architectures.

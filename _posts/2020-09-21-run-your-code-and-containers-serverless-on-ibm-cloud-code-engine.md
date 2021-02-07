@@ -3,6 +3,7 @@ layout: post
 categories: [Kubernetes,Knative,Serverless]
 title: "Run your Code and Containers Serverless on IBM Cloud Code Engine"
 date: "2020-09-21"
+tag: "2020"
 ---
 
 _[IBM Cloud Code Engine](https://cloud.ibm.com/docs/codeengine?topic=codeengine-about){:target="_blank"} is a fully managed, serverless platform that runs your containerized workloads, including web apps, micro-services, event-driven functions, or batch jobs. Code Engine even builds container images for you from your source code. Because these workloads are all hosted within the same Kubernetes infrastructure, all of them can seamlessly work together. The Code Engine experience is designed so that you can focus on writing code and not on the infrastructure that is needed to host it._

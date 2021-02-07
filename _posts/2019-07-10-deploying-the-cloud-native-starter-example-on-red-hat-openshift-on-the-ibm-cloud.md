@@ -3,6 +3,7 @@ layout: post
 categories: [Kubernetes,OpenShift]
 title: "Deploying the Cloud Native Starter example on Red Hat OpenShift on the IBM Cloud"
 date: "2019-07-10"
+tag: "2019"
 ---
 
 In my last [blog](https://haralduebele.github.io/2019/07/03/deploying-the-cloud-native-starter-microservices-on-minishift/){:target="_blank"} I explained how to deploy our [Cloud Native Starter project](https://github.com/IBM/cloud-native-starter){:target="_blank"} on Minishift. Since early June 2019 there is a Red Hat [OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift){:target="_blank"} beta available on the IBM Cloud. It is currently based on OpenShift 3.11 and is a managed offering like the IBM Kubernetes Service on IBM Cloud. Our cloud native starter project is mostly based on Open Source technology and free offerings but while OpenShift is Open Source it is not free. During the beta there are no license fees but OpenShift does not run on the free cluster available with the IBM Kubernetes Service.

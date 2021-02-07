@@ -3,6 +3,7 @@ layout: post
 categories: [Kubernetes,OpenShift,Reactive]
 title: "Cloud Native and Reactive Microservices on Red Hat OpenShift 4"
 date: "2020-02-03"
+tag: "2020"
 ---
 
 My colleague Niklas Heidloff has started to create [another version of our Cloud Native Starter](https://github.com/IBM/cloud-native-starter/tree/master/reactive#reactive-java-microservices){:target="_blank"} using a reactive programming model, and he has also written an extensive series of blogs about it [starting here](http://heidloff.net/article-development-reactive-applications-quarkus/){:target="_blank"}. He uses Minikube to deploy the reactive example and I have created [documentation and scripts to deploy it on CloudReady Containers](https://github.com/IBM/cloud-native-starter/blob/master/reactive/documentation/OpenShift4.md#reactive-java-microservices-on-openshift-4){:target="_blank"} (CRC) which is running Red Hat OpenShift 4.

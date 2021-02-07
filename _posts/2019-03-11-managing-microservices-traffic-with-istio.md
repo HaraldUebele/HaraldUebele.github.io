@@ -3,6 +3,7 @@ layout: post
 categories: [Kubernetes,Istio,Microservices]
 title: "Managing Microservices Traffic with Istio"
 date: "2019-03-11"
+tag: "2019"
 ---
 
 I have recently started to work on a new project "[Cloud Native Starter](https://github.com/ibm/cloud-native-starter){:target="_blank"}" where we want to build a sample polyglot microservices application with Java and Node.js on Kubernetes (Minikube) using [Istio](https://istio.io){:target="_blank"} for traffic management, tracing, metrics, fault injection, fault tolerance, etc.

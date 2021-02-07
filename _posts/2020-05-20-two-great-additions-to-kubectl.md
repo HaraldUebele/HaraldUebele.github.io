@@ -3,9 +3,7 @@ layout: post
 categories: [Kubernetes]
 title: "Two great additions to 'kubectl'"
 date: "2020-05-20"
-tags: 
-  - "kubectl"
-  - "kubernetes"
+tag: "2020"
 ---
 
 I started to learn Kubernetes in its vanilla form. Almost a year ago I made my first steps on Red Hat OpenShift. From then on, going back to vanilla Kubernetes made me miss the easy way you switch namespaces (aka projects) in OpenShift. With 'oc project' it is like switching directories on your notebook. You can do that with 'kubectl' somehow but it is not as simple.

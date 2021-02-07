@@ -3,6 +3,7 @@ layout: post
 categories: [Kubernetes,Istio,OpenShift]
 title: "OpenShift Service Mesh aka Istio on CodeReady Containers"
 date: "2019-09-17"
+tag: "2019"
 ---
 
 Last week I wrote about [running OpenShift 4 on your laptop](https://haralduebele.github.io/2019/09/13/red-hat-openshift-4-on-your-laptop/). This is using CodeReady Containers (CRC) and deploys a full Red Hat OpenShift into a single VM on a workstation.

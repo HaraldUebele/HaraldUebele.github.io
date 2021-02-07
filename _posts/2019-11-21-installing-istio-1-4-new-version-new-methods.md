@@ -3,6 +3,7 @@ layout: post
 categories: [Kubernetes,Istio]
 title: "Installing Istio 1.4 - New version, new methods"
 date: "2019-11-21"
+tag: "2019"
 ---
 
 The latest release of Istio -- 1.4.x -- is changing the way Istio is installed. There are now two methods, the method using Helm will be deprecated in the future:

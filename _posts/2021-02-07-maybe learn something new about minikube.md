@@ -4,11 +4,13 @@ categories: [Kubernetes]
 title: (Maybe) Learn something new about Minikube
 date: "2021-02-07"
 tag: "2021"
+excerpt_separator: <!--more-->
 ---
 
 I wrote my first blog that involved [Minikube](https://minikube.sigs.k8s.io/docs/){:target="_blank"} in February 2019. And I still use Minikube a lot. 
 
 Recently I tried to figure out how to run Kubernetes exercises on a "memory challenged" notebook (8 GB RAM). I looked into alternatives, namely K3s (a small foorprint Kubernetes distribution) and K3d which uses K3s and runs it on top of Docker and not in a VM. That sounded like a solution to the memory challenge. K3d runs Docker in Docker: a worker node is a Docker container running on your workstation's Docker instance. The worker node itself runs its own Docker and on this Docker instance all the Kubernetes deployments are running. This is totally cool on Linux since it eliminates the need for virtualization completely since Docker runs native on Linux. On Mac and Windows you use the virtualization that is part of Docker Desktop. So you need virtualization but it is perfectly integrated in your host operating system.
+<!--more-->
 
 When I looked a little closer into the Minikube documentation I realized that Minikube can use Docker, too. So here is the first thing I learned new:
 

@@ -3,10 +3,7 @@ layout: post
 title: "Serverless and Knative - Part 1: Installing Knative on CodeReady Containers"
 date: "2020-06-02"
 categories: [Knative,Kubernetes,Serverless]
-tags: 
-  - "knative"
-  - "kubernetes"
-  - "serverless"
+tag: "2020"
 ---
 
 I have worked with Kubernetes for quite some time now, also with Istio Service Mesh. Recently I decided that I want to explore Knative and its possibilities.

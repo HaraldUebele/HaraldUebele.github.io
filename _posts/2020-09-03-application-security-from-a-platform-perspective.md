@@ -3,11 +3,7 @@ layout: post
 title: "Application Security from a Platform Perspective"
 date: "2020-09-03"
 categories: [Kubernetes,Istio,Security,OpenShift]
-tags: 
-  - "istio"
-  - "kubernetes"
-  - "openshift"
-  - "security"
+tag: "2020"
 ---
 
 We have added an application security example to our pet project [Cloud Native Starter](https://github.com/IBM/cloud-native-starter/tree/master/security){:target="_blank"}.

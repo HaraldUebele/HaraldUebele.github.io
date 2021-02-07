@@ -1,6 +1,5 @@
 ---
 layout: post
-categories: 2019
 title: "Blue Cloud Mirror -- A fun IBM Cloud showcase"
 date: "2019-01-31"
 ---

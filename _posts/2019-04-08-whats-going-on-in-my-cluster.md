@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [2019,Kubernetes,Observability]
+categories: [Kubernetes,Observability]
 title: "What's Going On (in my cluster)?"
 date: "2019-04-08"
 ---

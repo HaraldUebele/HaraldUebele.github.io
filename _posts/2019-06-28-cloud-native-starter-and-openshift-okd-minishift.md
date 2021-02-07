@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [2019,Kubernetes,OpenShift]
+categories: [Kubernetes,OpenShift]
 title: "Cloud Native Starter and OpenShift, OKD, Minishift"
 date: "2019-06-28"
 ---

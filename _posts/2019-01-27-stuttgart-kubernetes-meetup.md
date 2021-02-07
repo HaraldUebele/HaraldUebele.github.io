@@ -1,6 +1,5 @@
 ---
 layout: post
-categories: 2019
 title: "Stuttgart Kubernetes Meetup"
 date: "2019-01-27"
 ---

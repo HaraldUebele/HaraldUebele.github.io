@@ -2,7 +2,7 @@
 layout: post
 title: "Red Hat OpenShift 4 on your laptop"
 date: "2019-09-13"
-categories: [2019,Kubernetes,OpenShift]
+categories: [Kubernetes,OpenShift]
 tags: 
   - "kubernetes"
   - "openshift"

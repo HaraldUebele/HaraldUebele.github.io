@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [2019,Kubernetes,OpenShift]
+categories: 2019
 title: "Deploying the Cloud Native Starter example on Red Hat OpenShift on the IBM Cloud"
 date: "2019-07-10"
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Serverless and Knative - Part 2: Knative Serving"
 date: "2020-06-03"
-categories: [Knative,Kubernetes,Serverless]
+categories: 2020
 tags: 
   - "knative"
   - "kubernetes"

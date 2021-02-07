@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [2019,Kubernetes,OpenShift]
+categories: 2019
 title: "Deploy a Database into a Kubernetes Cluster with an Operator"
 date: "2019-08-22"
 ---

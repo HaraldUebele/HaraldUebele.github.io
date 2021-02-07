@@ -1,7 +1,7 @@
 ---
 title: "Serverless and Knative – Part 3: Knative Eventing"
 date: "2020-06-10"
-categories: [Knative,Kubernetes,Serverless]
+categories: 2020
 tags: 
   - "knative"
   - "kubernetes"

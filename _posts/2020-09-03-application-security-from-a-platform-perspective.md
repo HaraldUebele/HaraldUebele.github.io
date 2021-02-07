@@ -2,7 +2,7 @@
 layout: post
 title: "Application Security from a Platform Perspective"
 date: "2020-09-03"
-categories: [Kubernetes,Istio,Security,OpenShift]
+categories: 2020
 tags: 
   - "istio"
   - "kubernetes"

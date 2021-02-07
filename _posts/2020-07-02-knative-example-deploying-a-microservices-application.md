@@ -2,7 +2,7 @@
 layout: post
 title: "Knative Example: Deploying a Microservices Application"
 date: "2020-07-02"
-categories: 2020
+categories: [Knative,Kubernetes,Serverless,Microservices]
 tags: 
   - "knative"
   - "kubernetes"

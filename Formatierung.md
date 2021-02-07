@@ -39,3 +39,10 @@ _X_
 ```
 
 ## Remove escape \
+
+
+# FYI
+
+## Read time
+
+https://int3ractive.com/blog/2018/jekyll-read-time-without-plugins/

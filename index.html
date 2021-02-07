@@ -11,7 +11,7 @@ layout: default
         <div>
           <p class="post_date">
             {{ post.date | date: "%B %e, %Y" }}
-            ({% include read-time.html content=post.content %})
+            {% include read-time.html content=post.content %}
           </p>
         </div>
       </a>

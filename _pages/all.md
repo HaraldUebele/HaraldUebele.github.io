@@ -5,7 +5,7 @@ permalink: /all/
 ---
 
 
-<ul>
+<ul class="html-small">
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }} {{ post.date | date: "%Y/%m/%d" }}</a>

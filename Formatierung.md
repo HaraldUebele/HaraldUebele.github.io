@@ -19,7 +19,7 @@ tags:
 
 ## Bilder:
 
-![Kommentar]({{ site.baseurl }}/images/yyyy/mm/source-sink.png)
+![Kommentar](/images/yyyy/mm/source-sink.png)
 
 Bildunterschrift zentriert:
 

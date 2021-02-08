@@ -7,7 +7,7 @@ tag: "2019"
 
 Blue Cloud Mirror is an online game based on multiple IBM Cloud technologies. It has two levels, in level one you need to show five facial expressions like happy, angry, etc. In level two you need to show five body positions. Have a look at it and play it [here](https://blue-cloud-mirror.mybluemix.net){:target="_blank"}.
 
-![]({{ site.baseurl }}/images/2019/01/selection_344.png)
+![](/images/2019/01/selection_344.png)
 
 I created the game together with my colleagues [Niklas Heidloff](https://twitter.com/nheidloff){:target="_blank"} and [Thomas Südbröcker](https://twitter.com/tsuedbroecker){:target="_blank"}. Niklas desribed many aspects of it in his blog, starting [here.](http://heidloff.net/article/introducing-blue-cloud-mirror){:target="_blank"}
 

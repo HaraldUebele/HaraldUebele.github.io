@@ -21,7 +21,7 @@ You can create a free Kubernetes cluster (single node, 2 CPUs, 4 GB memory) that
 
 To create a Kubernetes cluster, select "Kubernetes" from the burger menu in the upper left corner of the IBM Cloud dashboard.
 
-![]({{ site.baseurl }}/images/2019/02/selection_355.png)
+![](/images/2019/02/selection_355.png)
 {:center: style="text-align: center"}
 _Create a free Kubernetes cluster on the IBM Cloud_
 {:center}
@@ -30,7 +30,7 @@ In the "Kubernetes" dashboard, select "Clusters" on the left, then click on "Cre
 
 Once the cluster is deployed and in status "Normal", go to the "Add-ons" tab.
 
-![]({{ site.baseurl }}/images/2019/02/selection_358.png)
+![](/images/2019/02/selection_358.png)
 {:center: style="text-align: center"}
 _Kubernetes Add-Ons on IBM Cloud_
 {:center}
@@ -39,7 +39,7 @@ Click "Install" for Managed Istio, then select "Istio", "Extras", and "Sample". 
 
 Gaining access to the Kubernetes cluster is described in the "Acccess" tab of the cluster dashboard:
 
-![]({{ site.baseurl }}/images/2019/02/selection_359.png)
+![](/images/2019/02/selection_359.png)
 
 Basically you need the "ibmcloud" CLI, login to you IBM Cloud account, target the region where you cluster is located, and download the Kubernetes configuration file. The instruction in the dashboard and at the end of the download specify an "export" string that you need to paste into the command shell. After that, kubectl will target the cluster in IBM Kubernetes Service. In addition there is a button in the cluster dashboard that opens the "Kubernetes Dashboard".
 
@@ -63,7 +63,7 @@ gives the port number of the istio-ingress-gateway, typically 31380.
 
 Bookinfo productpage is then available at _http://publicIP:31380/productpage_
 
-![]({{ site.baseurl }}/images/2019/02/selection_360.png)
+![](/images/2019/02/selection_360.png)
 {:center: style="text-align: center"}
 _Istio Bookinfo Sample_
 {:center}
@@ -111,7 +111,7 @@ Once the installation has completed, check the status of the Istio pods:
 kubectl get pod -n istio-system  
 ```
 
-![]({{ site.baseurl }}/images/2019/02/selection_361.png)
+![](/images/2019/02/selection_361.png)
 
 All pods must be in status Running (2/2) or Completed (0/1). Then install Kiali
 
@@ -157,7 +157,7 @@ In my environment it is 192.168.99.100.
 
 So the Kiali Dashboard can be accessed at https://192.168.99.100:31993/kiali _Accessing the Dashboard requires to accept a security exception since it uses a self-signed TLS certificate!_  
 
-![]({{ site.baseurl }}/images/2019/02/selection_362.png)
+![](/images/2019/02/selection_362.png)
 {:center: style="text-align: center"}
 _Kiali Dashboard_
 {:center}

@@ -12,7 +12,7 @@ There a currently not many Istio examples available, the one most widely used an
 
 We are building this sample on Minikube, instructions to set Minikube, Istio, and Kiali can be found [here](https://github.com/ibm/cloud-native-starter/blob/master/LocalEnvironment.md){:target="_blank"}.
 
-![]({{ site.baseurl }}/images/2019/04/architecture.png?w=1024)
+![](/images/2019/04/architecture.png?w=1024)
 
 The application is made up of four services:
 
@@ -23,15 +23,15 @@ The application is made up of four services:
 
 The interesting part is that there a two versions of Web-API and these exist as two different Kubernetes deployments running in parallel:
 
-![]({{ site.baseurl }}/images/2019/03/selection_371.png)
+![](/images/2019/03/selection_371.png)
 
-![]({{ site.baseurl }}/images/2019/03/selection_372.png)
+![](/images/2019/03/selection_372.png)
 
 Normally, in Kubernetes you would replace v1 with v2. With Istio you can use two or more deployments of different versions of an app to do a green/blue, A/B, or canary deployment to test if v2 works as expected.
 
 Note the "version" label: this is very important for Istio to distinguish between the two deployments. There is also a Kubernetes service definition:
 
-![]({{ site.baseurl }}/images/2019/03/selection_373.png)
+![](/images/2019/03/selection_373.png)
 
 The selector is only using the "app" label. Without Istio it will distribute traffic between the two deployments evenly. Note that the port is named ("name: http"). This is a [requirement](https://istio.io/docs/setup/kubernetes/spec-requirements/){:target="_blank"} for Istio.
 
@@ -44,13 +44,13 @@ _© istio.io_
 
 To route traffic (e.g. REST API calls) into a Kubernetes application normally requires a Kubernetes Ingress. With Istio, the equivalent is a Istio Gateway which allows it to manage and monitor incoming traffic. This gateway in turn uses the Istio ingressgateway which is a pod running in Kubernetes. This is the definition of an Istio gateway:
 
-![]({{ site.baseurl }}/images/2019/03/selection_375.png)
+![](/images/2019/03/selection_375.png)
 
 This gateway listens on port 80 and answers to any request ("*"). The "hosts: *" should not be used in production, of course. For a Minikube test environment it is OK.
 
 The second required Istio configuration object is a "Virtual Service" which overlays the Kubernetes service definition. The Web-API service in the example exposes 3 REST URIs. Two of them are used for API documentation (Swagger), they are /openapi and /openapi/ui/ and are currently independent of the version of Web-API. The third URI is /web-api/v1/getmultiple and this is version-specific. This is the VirtualService definition:
 
-![]({{ site.baseurl }}/images/2019/03/selection_376.png)
+![](/images/2019/03/selection_376.png)
 
 1. is the pointer to the Ingress Gateway
 2. are URIs that directly point to the Kubernetes service web-api listenting on port 9080 (without Istio)
@@ -59,20 +59,20 @@ The second required Istio configuration object is a "Virtual Service" which over
 
 The last object required is a DestinationRule, also Istio specific:
 
-![]({{ site.baseurl }}/images/2019/03/selection_377.png)
+![](/images/2019/03/selection_377.png)
 
 Here the subset v1 is selecting pods that belong to web-api and have a selector label of "version: v1" which is the deployment "web-api-v1".
 
 With this Istio rule set in place all incoming traffic will go to version 1 of the Web-API.
 
-![]({{ site.baseurl }}/images/2019/03/selection_379.png)
+![](/images/2019/03/selection_379.png)
 
 We can change the VirtualService to distribute incoming traffic, e.g. 80% should go to version 1, 20% should go to version 2:
 
-![]({{ site.baseurl }}/images/2019/03/selection_378.png)
+![](/images/2019/03/selection_378.png)
 
 And this is how it looks in Kiali:
 
-![]({{ site.baseurl }}/images/2019/03/selection_370.png)
+![](/images/2019/03/selection_370.png)
 
 I will continue to experiment with other Istio features like telemetry (monitoring, logging), fault injection, etc. I feel like "Jugend forscht" :-)

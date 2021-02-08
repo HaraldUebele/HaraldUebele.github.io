@@ -87,7 +87,7 @@ $ crc console
 
 User is 'kubeadmin' and the password has been printed in the completion message above. You will need to accept the self-signed certificates and then be presented with an OpenShift 4 Web Console:
 
-![Dashboard](https://{{ site.baseurl }}/2019/09/2019-09-13_11-52.png?w=1024)
+![Dashboard](/images/2019/09/2019-09-13_11-52.png?w=1024)
 
 There are some more commands that you probably need:
 

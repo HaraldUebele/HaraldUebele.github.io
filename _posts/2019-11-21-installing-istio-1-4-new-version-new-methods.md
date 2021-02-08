@@ -11,7 +11,7 @@ The latest release of Istio -- 1.4.x -- is changing the way Istio is installed. 
 - Istio Operator, this is in alpha state at the moment and seems to be similar to the way Red Hat Service Mesh is installed (see [here](https://haralduebele.github.io/2019/09/17/openshift-service-mesh-aka-istio-on-codeready-containers/){:target="_blank"})
 - Using `istioctl`
 
-![]({{ site.baseurl }}/images/2019/11/istio1.4.png?w=796)
+![](/images/2019/11/istio1.4.png?w=796)
 
 I have tried the `istioctl` method with a Kubernetes cluster on IBM Cloud (IKS) and want to document my findings.
 
@@ -95,7 +95,7 @@ Kiali is Istio's dashboard and this is one of the coolest features in 1.4.x: To 
 
 Then login with admin/admin:
 
-![]({{ site.baseurl }}/images/2019/11/kiali.png?w=1024)
+![](/images/2019/11/kiali.png?w=1024)
 
 The same command works for Prometheus (monitoring) and Jaeger (tracing), too:
 

@@ -8,7 +8,7 @@ tag: "2019"
 
 In my last [blog](https://haralduebele.github.io/2019/07/03/deploying-the-cloud-native-starter-microservices-on-minishift/){:target="_blank"} I explained how to deploy our [Cloud Native Starter project](https://github.com/IBM/cloud-native-starter){:target="_blank"} on Minishift. Since early June 2019 there is a Red Hat [OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift){:target="_blank"} beta available on the IBM Cloud. It is currently based on OpenShift 3.11 and is a managed offering like the IBM Kubernetes Service on IBM Cloud. Our cloud native starter project is mostly based on Open Source technology and free offerings but while OpenShift is Open Source it is not free. During the beta there are no license fees but OpenShift does not run on the free cluster available with the IBM Kubernetes Service.
 
-![]({{ site.baseurl }}/images/2019/07/Logotype_RH_OpenShift_wLogo_RGB_Gray.png)
+![](/images/2019/07/Logotype_RH_OpenShift_wLogo_RGB_Gray.png)
 {:center: style="text-align: center"}
 _Logo: (c) Red Hat, Inc._
 {:center}
@@ -41,6 +41,6 @@ oc apply -f deployment-openshift.yaml
 oc expose svc/authors
 ```
 
-![]({{ site.baseurl }}/images/2019/07/cloud-native-starter-web-app-google-chrome_469.png)
+![](/images/2019/07/cloud-native-starter-web-app-google-chrome_469.png)
 
 **Istio** is currently not officially supported on OpenShift. There is a Red Hat OpenShift Service Mesh currently available as [Technology Preview](https://docs.openshift.com/container-platform/3.11/servicemesh-install/servicemesh-install.html#product-overview){:target="_blank"}. The upstream project for this is [Maistra](https://maistra.io/){:target="_blank"} and this is what I want to test next. But Maistra requires the so-called "admission-webhooks" for Sidecar auto-injection, and these are currently missing in the OpenShift on IBM Cloud master nodes. There is an issue open with IBM Development and they plan to include them in the near future. So for the time being we deploy the cloud native starter example on OpenShift on IBM Cloud without Istio. And I plan another blog once I am able to install Istio, stay tuned.

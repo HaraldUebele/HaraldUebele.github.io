@@ -15,7 +15,7 @@ Recently I tried to figure out how to run Kubernetes exercises on a "memory chal
 
 When I looked a little closer into the Minikube documentation I realized that Minikube can use Docker, too. So here is the first thing I learned new:
 
-## 1. Minikube Docker Driver
+### 1. Minikube Docker Driver
 
 The [Docker driver](https://minikube.sigs.k8s.io/docs/drivers/docker/){:target="_blank"} became experimental somewhere around Minikube Version 1.8 in early 2020. It is now (Minikube Version 1.17) a preferred driver for Linux, macOS, and Windows.
 
@@ -43,7 +43,7 @@ Initial start of a Minikube cluster will take some time because it needs to down
 
 I found more interesting features that I didn't know before:
 
-## 2. Minikube Service
+### 2. Minikube Service
 
 The command `minikube service` makes working with Kubernetes services a lot easier.
 
@@ -94,7 +94,7 @@ The command `minikube service` makes working with Kubernetes services a lot easi
     http://192.168.49.2:30675
     ```
     
-## 3. Minikube Tunnel
+### 3. Minikube Tunnel
 
 If you use an Ingress on Minikube, for example Istio Ingress Gateway, you will have noticed that the corresponding service never gets an external IP address because that is simply not possible on Minikube.
 
@@ -135,7 +135,7 @@ The IP address 10.106.56.168 will be available on your workstation.
 
 You can then use services like nip.io or xip.io to create dummy DNS entries, like `myingress.10.106.56.168.xip.io`.
 
-## 4. Minikube Logviewer
+### 4. Minikube Logviewer
 
 Central logging is important and helpful. But installing something like an ELK stack may be a bit overwhelming for Minikube. A while ago I found the [Minikube Logviewer](https://github.com/ivans3/minikube-log-viewer){:target="_blank"} which is quite simple and doesn't require a lot of resources. 
 

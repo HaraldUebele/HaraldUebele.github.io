@@ -8,7 +8,7 @@ tag: "2020"
 
 You want to code Java, not Kubernetes deployment YAML files? And you use Quarkus? You may have seen the [announcement blog for Quarkus 1.3.0](https://quarkus.io/blog/quarkus-1-3-0-final-released). Under "much much more" is a feature that is very interesting to everyone using Kubernetes or OpenShift and with a dislike for the required YAML files:
 
-#### "_Easy deployment to Kubernetes or OpenShift_
+#### _"Easy deployment to Kubernetes or OpenShift"_
 
 _The Kubernetes extension has been overhauled and now gives users the ability to deploy their Quarkus applications to Kubernetes or OpenShift with almost no effort. Essentially the extension now also takes care of generating a container image and applying the generated Kubernetes manifests to a target cluster, after the container image has been generated._"
 

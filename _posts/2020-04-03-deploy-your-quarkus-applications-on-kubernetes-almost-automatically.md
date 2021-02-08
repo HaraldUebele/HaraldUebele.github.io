@@ -12,7 +12,7 @@ You want to code Java, not Kubernetes deployment YAML files? And you use Quarkus
 
 _The Kubernetes extension has been overhauled and now gives users the ability to deploy their Quarkus applications to Kubernetes or OpenShift with almost no effort. Essentially the extension now also takes care of generating a container image and applying the generated Kubernetes manifests to a target cluster, after the container image has been generated._"
 
-![Quarkus Logo]({{ site.baseurl }}/images/2020/04/quarkus_icon.png)
+![Quarkus Logo](/images/2020/04/quarkus_icon.png)
 {:center: style="text-align: center"}
 _Image © quarkus.io_
 {:center}
@@ -101,7 +101,7 @@ The definition of the port (http, 8080) is picked up by Quarkus from the source 
 
 ### Deploy to
 
-![Minikube]({{ site.baseurl }}/images/2020/04/minikube-logo-1024x290.jpg)
+![Minikube](/images/2020/04/minikube-logo-1024x290.jpg)
 
 With Minikube, we will create the Container (Docker) Image in the Docker installation that is part of the Minikube VM. So after starting Minikube (`minikube start`) you need to point your local docker command to the Minikube environment:
 
@@ -152,7 +152,7 @@ The result of this execise:
 
 Installing 2 Quarkus extensions and adding 7 statements to the application.properties file (of which 1 is optional) allows you to compile your Java code, build a container image, and deploy it into Kubernetes with a single command. I think this is cool!
 
-![IKS]({{ site.baseurl }}/images/2020/04/image.png?w=1024)
+![IKS](/images/2020/04/image.png?w=1024)
 
 What I just described for Minikube also works for the IBM Cloud. IBM Cloud Kubernetes Service (or IKS) does not have an internal Container Image Registry, instead this is a separate service and you may have guessed its name: IBM Cloud Container Registry (ICR). This example works on free IKS clusters, too. A [free IKS cluster](https://cloud.ibm.com/docs/containers?topic=containers-getting-started#clusters_gs) is free of charge and you can use for 30 days.
 
@@ -225,7 +225,7 @@ The result should be 'hello'.
 
 ### All this also works on
 
-![Red Hat OpenShift]({{ site.baseurl }}/images/2020/04/logotype-rh-openshift-360x96_0.png)
+![Red Hat OpenShift](/images/2020/04/logotype-rh-openshift-360x96_0.png)
 
 I have tested this with [CodeReady Containers](https://haralduebele.github.io/2019/09/13/red-hat-openshift-4-on-your-laptop/) (CRC) and on [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started). CRC was a bit flaky, sometimes it would build the image, create the deployment config but wouldn't start the pod.
 
@@ -278,7 +278,7 @@ $ ./mvnw clean package -Dquarkus.kubernetes.deploy=true
 
 It will take a while but in the end you should see a "BUILD SUCCESS" and in the OpenShift console you should see an application called "todo-app" with a Deployment Config, Pod, Build, Service, and Route:
 
-![OpenShift Console]({{ site.baseurl }}/images/2020/04/image-1.png?w=1024)
+![OpenShift Console](/images/2020/04/image-1.png?w=1024)
 
 ### Additional and missing options
 

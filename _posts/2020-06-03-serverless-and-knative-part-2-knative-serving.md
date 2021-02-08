@@ -10,7 +10,7 @@ In the [first part of this series](https://haralduebele.github.io/Installing-Kna
 
 In this second part I will cover Knative Serving, which is responsible for deploying and running containers, also networking and auto-scaling. Auto-scaling allows scale to zero and is probably the main reason why Knative is referred to as Serverless platform.
 
-![Knative logo]({{ site.baseurl }}/images/2020/06/m5EQknfW_400x400.jpg)
+![Knative logo](/images/2020/06/m5EQknfW_400x400.jpg)
 
 Before digging into Knative Serving let me share a piece of information from the [Knative Runtime Contract](https://github.com/knative/serving/blob/master/docs/runtime-contract.md){:target="_blank"} which helps to position Knative. It compares Kubernetes workloads (general-purpose containers) with Knative workloads (stateless request-triggered containers):
 
@@ -29,7 +29,7 @@ As a developer, I would expect Knative to make my life easier (Knative claims th
 3. **Configuration**: Desired state of the workload. Creates and maintains Revisions.
 4. **Revision**: A specific version of a code deployment. Revisions are immutable. Revisions can be scaled up and down. Rules can be applied to the Route to direct traffic to specific Revisions.
 
-![Kn object model]({{ site.baseurl }}/images/2020/06/object_model.png)
+![Kn object model](/images/2020/06/object_model.png)
 
 _(c) knative.dev_
 
@@ -99,13 +99,13 @@ It would have taken a YAML file with a lot more definitions and specifications t
 
 Take a look at the OpenShift Console, in the Developer, Topology view:
 
-![]({{ site.baseurl }}/images/2020/06/image.png?w=1024)
+![](/images/2020/06/image.png?w=1024)
 
 I really like the way the Red Hat OpenShift developers have visualized Knative objects here.
 
 If you click on the link (Location) of the Route, you will see the helloworld-nodejs response in a browser:
 
-![]({{ site.baseurl }}/images/2020/06/image-4.png?w=614)
+![](/images/2020/06/image-4.png?w=614)
 
 If you wait about a minute or so, the Pod will terminate: "All Revisions are autoscaled to 0". If you click on the Route location (URL) then, a Pod will be spun up again.
 
@@ -186,7 +186,7 @@ Conditions:
 
 It is visible in the OpenShift Web Console, too:
 
-![]({{ site.baseurl }}/images/2020/06/image-1.png?w=1024)
+![](/images/2020/06/image-1.png?w=1024)
 
 Revision 2 has now fully replaced Revision 1.
 
@@ -220,11 +220,11 @@ spec:
 
 This will create a 75% / 25% distribution between revision 1 and 2. Deploy the change and watch in the OpenShift Web Console:
 
-![]({{ site.baseurl }}/images/2020/06/image-2.png?w=1024)
+![](/images/2020/06/image-2.png?w=1024)
 
 Have you ever used Istio? To accomplish this with Istio requires configuring the Ingress Gateway plus defining a Destination Rule and a Virtual Service. In Knative it is just adding a few lines of code to the Service description. Have you noticed the "Set Traffic Distribution" button in the screen shot of the OpenShift Web Console? Here you can modify the distribution on the fly:
 
-![]({{ site.baseurl }}/images/2020/06/image-3.png?w=540)
+![](/images/2020/06/image-3.png?w=540)
 
 ### Auto-Scaling
 
@@ -452,7 +452,7 @@ spec:
 
 When this is deployed to OpenShift, the correct URL shows up in the Route:
 
-![]({{ site.baseurl }}/images/2020/06/image-5.png?w=493)
+![](/images/2020/06/image-5.png?w=493)
 
 Of course you can no longer open the URL in your browser, this address is only available from within the Kubernetes cluster.
 

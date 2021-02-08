@@ -8,13 +8,13 @@ tag: "2020"
 
 I have written about [Cloud Native Starter](https://github.com/IBM/cloud-native-starter){:target="_blank"} many times in this blog. It is a project created by Niklas Heidloff, Thomas Südbröcker, and myself that demonstrates how to get started with cloud-native applications and microservice based architectures. We have started it on Minikube, and ported it to IBM Cloud Kubernetes Service and to Red Hat OpenShift in the form of Minishift and Red Hat OpenShift on IBM Cloud, the last two based on OpenShift version 3.
 
-![]({{ site.baseurl }}/images/2020/01/image-1.png?w=1024)
+![](/images/2020/01/image-1.png?w=1024)
 
 Cloud Native Starter Vue.js frontend
 
 OpenShift 4 on the IBM Cloud is imminent and Minishift has a successor based on version 4 called [CodeReady Containers or CRC](https://haralduebele.github.io/2019/09/13/red-hat-openshift-4-on-your-laptop/){:target="_blank"}. Time to move Cloud Native Starter to OpenShift 4. Here is a summary of my experience.
 
-![]({{ site.baseurl }}/images/2020/01/logo-red_hat-codeready_containers-a-standard-rgb-profile-square-300x127-1.png?w=300)
+![](/images/2020/01/logo-red_hat-codeready_containers-a-standard-rgb-profile-square-300x127-1.png?w=300)
 {:center: style="text-align: center"}
 _© Red Hat Inc._
 {:center}
@@ -29,13 +29,13 @@ There is a simple way to install Istio -- which is called OpenShift Service Mesh
 
 While Service Mesh is Istio under the covers, Red Hat has added some features. You can have more than one Istio Control Plane in an OpenShift cluster, and they can have different configurations (demo and production for example). A 'Member Roll' then describes which OpenShift projects (namespaces) are a member of a specific Istio Control Plane. With vanilla upstream Istio, a namespace can be tagged to enable 'automatic sidecar injection'. When a deployment is made to a tagged namespace, an envoy sidecar is then automatically injected into each pod. This is very convenient in Kubernetes but not helpful in OpenShift. Consider constantly doing binary builds: this automatic sidecar injection would inject an envoy into every build pod where it has zero function because this pod will terminate once the build is complete and it doesn't communicate. Red Hat decided to trigger sidecar injection by adding an annotation to the deployment yaml file:
 
-![]({{ site.baseurl }}/images/2020/01/image.png?w=507)
+![](/images/2020/01/image.png?w=507)
 
 "Vanilla" Kubernetes/Istio ignores this annotation, there is no problem to have it in yaml files that are used on vanilla Kubernetes/Istio, too.
 
 The telemetry tools and my favorite, Kiali, are integrated into the OpenShift authentication and accessible via a simple OpenShift route (https://kiali-istio-system.apps-crc.testing):
 
-![]({{ site.baseurl }}/images/2020/01/image-3.png?w=1024)
+![](/images/2020/01/image-3.png?w=1024)
 
 Kiali as part of OpenShift Service Mesh
 
@@ -84,6 +84,6 @@ Look here for my modified [nginx.conf](https://github.com/IBM/cloud-native-start
 
 This is the Cloud Native Starter project in the OpenShift 4 Console:
 
-![]({{ site.baseurl }}/images/2020/01/image-2.png?w=1024)
+![](/images/2020/01/image-2.png?w=1024)
 
 Project Overview in OpenShift 4

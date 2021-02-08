@@ -8,7 +8,7 @@ tag: "2020"
 
 We have added an application security example to our pet project [Cloud Native Starter](https://github.com/IBM/cloud-native-starter/tree/master/security){:target="_blank"}.
 
-![Diagram]({{ site.baseurl }}/images/2020/08/diagram.png?w=1024)
+![Diagram](/images/2020/08/diagram.png?w=1024)
 {:center: style="text-align: center"}
 _Picture 1: Application Architecture_
 {:center}
@@ -31,7 +31,7 @@ We also created an app security workshop from it, the material is publicly avail
 
 In this article I want to talk about application security from the platform side. This is what we cover in the above mentioned workshop:
 
-![Istio Security Architecture]({{ site.baseurl }}/images/2020/08/istiosecurityarchitecture.png?w=904)
+![Istio Security Architecture](/images/2020/08/istiosecurityarchitecture.png?w=904)
 {:center: style="text-align: center"}
 _Picture 2: Platform view of the Cloud Native Starter security sample_
 {:center}
@@ -73,7 +73,7 @@ Or use both, the certificate management system to manage your TLS certificates a
 
 We didn't cover adding a certificate management system or a KMS in our workshop to keep it simple. But there is a huge documentation section on many aspects of [protecting sensitive information in your cluster](https://cloud.ibm.com/docs/containers?topic=containers-encryption){:target="_blank"} on the IBM Cloud:
 
-![]({{ site.baseurl }}/images/2020/09/cs_encrypt_ov_kms.png)
+![](/images/2020/09/cs_encrypt_ov_kms.png)
 {:center: style="text-align: center"}
 _Picture 3 (c) IBM Corp._
 {:center}
@@ -87,7 +87,7 @@ In our example we set up Istio with "pod auto-injection" enabled for the `defaul
 
 The Istio control plane contains a certificate authority (CA) that can manage keys and certificates. This Istio CA creates a X.509 certificate for every Envoy proxy and this certificate can be used for encryption and authentication in the service mesh.
 
-![]({{ site.baseurl }}/images/2020/09/istio-id-prov.png)
+![](/images/2020/09/istio-id-prov.png)
 {:center: style="text-align: center"}
 _Picture 4 (c) istio.io_
 {:center}

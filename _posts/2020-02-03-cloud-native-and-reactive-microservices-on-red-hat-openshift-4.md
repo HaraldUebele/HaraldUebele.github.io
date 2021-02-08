@@ -10,7 +10,7 @@ My colleague Niklas Heidloff has started to create [another version of our Cloud
 
 The reactive version of Cloud Native Starter is based on [Quarkus](https://quarkus.io/){:target="_blank"} ("Supersonic Subatomic Java"), uses Apache Kafka for messaging, and PostgreSQL for data storage of the articles service. Postgres is accessed via the reactive SQL client. Niklas has blogged about all of the details.
 
-![]({{ site.baseurl }}/images/2020/02/architecture-small.png)
+![](/images/2020/02/architecture-small.png)
 {:center: style="text-align: center"}
 _Cloud Native Starter Reactive: High Level Architecture_
 {:center}
@@ -31,7 +31,7 @@ In the OpenShift OperatorHub catalog, the Strimzi operator is version 0.14.0, we
 
 The Dev4Devs Postgres operator is [installed](https://github.com/IBM/cloud-native-starter/blob/master/reactive/documentation/OpenShift4.md#4-install-postgresql){:target="_blank"} through the OperatorHub catalog in the OpenShift web console into its own namespace (postgres).
 
-![]({{ site.baseurl }}/images/2020/02/postgres-op-succeeded.png)
+![](/images/2020/02/postgres-op-succeeded.png)
 
 An example Postgres "cluster" with a single pod is deployed via the operator into the same namespace/project.
 

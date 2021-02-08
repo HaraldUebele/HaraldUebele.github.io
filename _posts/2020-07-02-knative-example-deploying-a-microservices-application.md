@@ -10,7 +10,7 @@ I have written about Knative Installation, Knative Serving, and Knative Eventing
 
 Cloud Native Starter is basically made up of 3 microservices: Web-API, Articles, and Authors. I have used it for an Istio hands-on workshop where one of the objectives is Traffic Management:
 
-![Cloud Native Starter]({{ site.baseurl }}/images/2020/06/cloudnativestarter-architecture.png?w=701)
+![Cloud Native Starter](/images/2020/06/cloudnativestarter-architecture.png?w=701)
 
 - A browser-based application requests a list of blog articles from the Web-API via the Istio Ingress.
 - The Web-API service retrieves a list of blog articles from the Articles services, and for every article it retrieves author details from the Authors service.

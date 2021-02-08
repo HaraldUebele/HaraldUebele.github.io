@@ -20,7 +20,7 @@ The Github repo has installation instructions for macOS and diferent flavours of
 
 'kubens' without a parameter will list all namespaces and with 'fzf' installed too you have a selectable list:
 
-![]({{ site.baseurl }}/images/2020/05/peek-2020-05-20-09-13.gif)
+![](/images/2020/05/peek-2020-05-20-09-13.gif)
 
 I think that is even better than 'oc projects'!
 
@@ -30,7 +30,7 @@ I think that is even better than 'oc projects'!
 
 In this example I have two contexts, one is CRC, the other IKS (Kubernetes on IBM Cloud):
 
-![]({{ site.baseurl }}/images/2020/05/2020-05-20_09-26.png?w=603)
+![](/images/2020/05/2020-05-20_09-26.png?w=603)
 
 Not exactly easy to know which one is which, isn't it? But you can set aliases for the entries like this:
 
@@ -41,7 +41,7 @@ $ kubectx IKS=knative/br1td2of0j1q10rc8aj0
 
 And then you get a list with recognizable names:
 
-![]({{ site.baseurl }}/images/2020/05/peek-2020-05-20-10-14.gif)
+![](/images/2020/05/peek-2020-05-20-10-14.gif)
 
 You can now switch via the list. In addition, with 'kubectx -' you can switch to the previous context.
 

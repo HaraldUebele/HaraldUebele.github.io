@@ -8,7 +8,7 @@ tag: "2020"
 
 I have worked with Kubernetes for quite some time now, also with Istio Service Mesh. Recently I decided that I want to explore Knative and its possibilities.
 
-![Knative logo]({{ site.baseurl }}/images/2020/06/m5EQknfW_400x400.jpg)
+![Knative logo](/images/2020/06/m5EQknfW_400x400.jpg)
 
 So what is Knative? The [Knative web site](https://knative.dev/){:target="_blank"} describes it as "components build on top of Kubernetes, abstracting away the complex details and enabling developers to focus on what matters." It has two distinct components, originally it were three:
 

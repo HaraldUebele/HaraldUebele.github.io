@@ -21,7 +21,7 @@ Applications and jobs are organized in "Projects" which are based on Kubernetes 
 
 This is based on Knative Serving. A container image is deployed, it runs and accepts requests until it is terminated by the operator. An example would be a web application that users interact with or a microservice that receives requests from a user or from other microservices. Since it is based on Knative serving it allows scale-to-zero; no resources are used and hence no money is spent when nobody uses the service. If it receives a request, it spins up, serves the request, and goes dormant again after a time-out. If you allow for auto scaling, it spins up more instances if a huge number of requests come in. Knative Serving itself can do this but IBM's Code Engine offers a nice web-based GUI for this. And some additional features that I describe later.
 
-![]({{ site.baseurl }}/images/2020/09/image-3.png?w=1024)
+![](/images/2020/09/image-3.png?w=1024)
 
 #### Run a job
 
@@ -29,7 +29,7 @@ What is the difference between an app and a job? An app runs until it is termina
 
 This is how the job would look in Code Engine:
 
-![]({{ site.baseurl }}/images/2020/09/image.png?w=1024)
+![](/images/2020/09/image.png?w=1024)
 
 There is a Job Configuration, it specifies the container image (perl) and in the Pi example the command (perl) and the 3 arguments to compute π to 2000 places and print it.
 
@@ -41,7 +41,7 @@ Submitting a "jobrun" creates a pod and in the pod's log we will find π as:
 
 The Submit Job is interesting:
 
-![]({{ site.baseurl }}/images/2020/09/image-1.png?w=522)
+![](/images/2020/09/image-1.png?w=522)
 
 This is where a Code Engine job differs from Kubernetes: In this screenshot, `Array indices` of "1-50" means that Code Engine will start 50 jobs numbered 1 through 50 using the same configuration. It doesn't really make sense to calculate the number Pi 50 fifty times. (It should render the identical result 50 times, if not, something is seriously wrong.) But imagine a scenario like this: You have a huge sample of sensor data (or images, or voice samples, etc.) that you need to process to create a ML model. Instead of starting one huge job to process all, you could start 50 or 100 or even more smaller jobs that work on subsets of the data in an "[embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel){:target="_blank"}" approach. The current limit is a maximum of 1000 job instances at the same time.
 
@@ -83,7 +83,7 @@ If you know Cloud Foundry on the IBM Cloud this should be familiar. IBM Cloud se
 
 The [helloworld](https://cloud.ibm.com/docs/codeengine?topic=codeengine-getting-started#app-hello){:target="_blank"} example displays the environment variables of the pod it is running in. If you [bind a IBM Cloud service](https://cloud.ibm.com/docs/codeengine?topic=codeengine-kn-service-binding){:target="_blank"} to it, you can display the results with it:
 
-![]({{ site.baseurl }}/images/2020/09/image-2.png?w=1024)
+![](/images/2020/09/image-2.png?w=1024)
 
 This binding of IBM Cloud services is really interesting for Code Engine jobs. Remember that you cannot connect to them and they can by themselves only write to the joblog. With this feature, you can bind for example a Cloud Object Storage (COS) service to the job, place your data into a COS bucket, run an array of jobs that pick "their" data based on their JOB_INDEX number, and when done, place the results back into the COS bucket.
 

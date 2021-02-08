@@ -7,7 +7,7 @@ tag: "2020"
 
 This is part 3 of my blog series about Serverless and Knative. I covered [Installing Knative on CodeReady Containers](https://haralduebele.github.io/Installing-Knative/) in part 1 and [Knative Serving](https://haralduebele.github.io/Knative-Serving/) in part 2.
 
-![Knative logo]({{ site.baseurl }}/images/2020/06/m5EQknfW_400x400.jpg)
+![Knative logo](/images/2020/06/m5EQknfW_400x400.jpg)
 
 Knative Eventing allows to pass events from an event producer to an event consumer. Knative events follow the [CloudEvents](https://github.com/cloudevents/spec/blob/master/spec.md){:target="_blank"} specification.
 
@@ -30,7 +30,7 @@ There are three usage patterns for Knative Eventing, the first one being the sim
 
 In this case, the source sends a message to a sink, there is no queuing or filtering, it is a one-to-one relationship.
 
-![Source to Sink]({{ site.baseurl }}/images/2020/06/source-sink.png)
+![Source to Sink](/images/2020/06/source-sink.png)
 
 {:center: style="text-align: center"}
 _(c) Red Hat, Inc._
@@ -109,7 +109,7 @@ A Knative Subscription connects (= subscribes) a Sink service to a Channel. Each
 
 Coming from the Source to Sink pattern in the previous section, the Source to Sink relation is now replaced with a Source to Channel relation. One or multiple Sink services subscribe to the Channel:
 
-![Channels and Subscriptions]({{ site.baseurl }}/images/2020/06/channels-subs.png)
+![Channels and Subscriptions](/images/2020/06/channels-subs.png)
 
 {:center: style="text-align: center"}
 _(c) Red Hat, Inc._
@@ -161,7 +161,7 @@ spec:
 
 I think this is were Knative Eventing gets interesting. Why would you install an overhead of resources (called Knative Eventing) into your Kubernetes cluster to simply send a message / event from one pod to another? But with an event broker that receives a multitude of different events and triggers that filter out a specific event and route that to a specific (micro) service I can see an advantage.
 
-![Brokers and Triggers]({{ site.baseurl }}/images/2020/06/brokers-triggers.png)
+![Brokers and Triggers](/images/2020/06/brokers-triggers.png)
 
 {:center: style="text-align: center"}
 _(c) Red Hat, Inc._
@@ -244,7 +244,7 @@ Also a trigger can only define a single subscriber (service). We cannot define a
 
 This means we will need 4 Trigger configurations:
 
-![]({{ site.baseurl }}/images/2020/06/triggers.png?w=941)
+![](/images/2020/06/triggers.png?w=941)
 
 If you start to seriously work with Knative Triggers, think about a good naming convention for them first. Otherwise troubleshooting could be difficult in case the triggers don't work as expected: OpenShift Web Console does a very good job at visualizing Knative objects but it ignores Triggers. And this is what you see in the command line:
 
@@ -259,7 +259,7 @@ greetingsbonjour   True             default                    21h
 
 Our example now looks like this:
 
-![]({{ site.baseurl }}/images/2020/06/broker-trigger-example.png?w=861)
+![](/images/2020/06/broker-trigger-example.png?w=861)
 
 We have the Knative default Broker, 4 Knative Triggers that filter on specific event attributes and pass the events to one or both of the 2 Knative eventing services. We don't have an event source yet.
 
@@ -309,7 +309,7 @@ In the curler pod, we send an event using curl to the broker URL, event type 'al
 
 In the OpenShift Web Console we can see that an eventingaloha pod has been started:
 
-![]({{ site.baseurl }}/images/2020/06/image-6.png?w=794)
+![](/images/2020/06/image-6.png?w=794)
 
 After about a minute this scales down to 0 again. Next test is type 'bonjour', again in the curler pod:
 
@@ -326,7 +326,7 @@ After about a minute this scales down to 0 again. Next test is type 'bonjour', a
 
 This starts a eventingbonjour pod as expected:
 
-![]({{ site.baseurl }}/images/2020/06/image-7.png?w=804)
+![](/images/2020/06/image-7.png?w=804)
 
 If we are fast enough we can check its logs and see our event has been forwarded:
 
@@ -355,7 +355,7 @@ In the last test we send the 'greetings' type event:
 
 And as expected we see pods in both services are started:
 
-![]({{ site.baseurl }}/images/2020/06/image-8.png?w=818)
+![](/images/2020/06/image-8.png?w=818)
 
 ### Using Apache Kafka
 

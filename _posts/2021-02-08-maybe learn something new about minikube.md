@@ -147,6 +147,6 @@ minikube addons enable logviewer
 
 For some reason you need to restart your Minikube cluster but after that it works:
 
-![]({{ site.baseurl }}/images/2021/02/minikube-logviewer.png)
+![](/images/2021/02/minikube-logviewer.png)
 
 I hope you will find this list helpful!

@@ -279,9 +279,9 @@ p > img {
 // No avatar 0px
 .site-avatar {
   float: left;
-  width: 0px;
+  width: 70px;
   height: 70px;
-  margin-right: 0px;
+  margin-right: 15px;
 
   @include mobile {
     float: none;

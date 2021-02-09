@@ -3,7 +3,6 @@ layout: post
 categories: [Kubernetes,OpenShift]
 title: "Deploying the Cloud Native Starter microservices on Minishift"
 date: "2019-07-03"
-tag: "2019"
 ---
 
 Initially I thought that different Kubernetes environments are more or less identical. I have learned in the past weeks that some of them are more and some are less so and there are always differences so here are my notes on deployments on Minishift. As a seasoned OpenShift user you might find it strange why I describe the obvious but if you come from a plain Kubernetes background like I did, this maybe helpful. Since I am still a noob in all things OpenShift maybe things are really done differently?

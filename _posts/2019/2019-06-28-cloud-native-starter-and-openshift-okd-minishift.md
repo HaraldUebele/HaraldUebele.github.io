@@ -3,7 +3,6 @@ layout: post
 categories: [Kubernetes,OpenShift]
 title: "Cloud Native Starter and OpenShift, OKD, Minishift"
 date: "2019-06-28"
-tag: "2019"
 ---
 
 Over the last weeks we have worked intensively on our [Cloud Native Starter](https://github.com/IBM/cloud-native-starter){:target="_blank"} project and made a lot of progress. It is an example of a microservices architecture based on Java, Kubernetes, and Istio. We have developed and tested it on Minikube and [IBM Cloud Kubernetes Service](https://cloud.ibm.com/docs/containers).

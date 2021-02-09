@@ -3,7 +3,6 @@ layout: post
 title: "Red Hat OpenShift 4 on your laptop"
 date: "2019-09-13"
 categories: [Kubernetes,OpenShift]
-tag: "2019"
 ---
 
 I use Minishift on my laptop and have [blogged](https://haralduebele.github.io/2019/06/28/cloud-native-starter-and-openshift-okd-minishift/){:target="_blank"} about it. Minishift is based on OKD 3.11, the Open Source upstream version of OpenShift. An update of Minishift to OpenShift 4 never happened and wasn't planned. I haven't actually seen OKD 4.1 except for some source code.

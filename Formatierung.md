@@ -10,7 +10,6 @@ layout: post
 categories: [XX,YY]
 title: This is a new article
 date: "2021-MM-DD"
-tag: "2021"
 published: false
 excerpt_separator: <!--more-->
 ---

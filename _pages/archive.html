@@ -10,10 +10,10 @@ permalink: /archive/
 
     {% if forloop.first %}
     <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
-    <ul>
+    <ul style="list-style-type:none">
     {% endif %}
 
-    <li>{{ post.date | date: "%m/%d" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><class="author_title")>{{ post.date | date: "%m/%d" }}</class> <a href="{{ post.url }}">{{ post.title }}</a></li>
 
     {% if forloop.last %}
     </ul>
@@ -21,7 +21,7 @@ permalink: /archive/
         {% if this_year != next_year %}
         </ul>
         <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
-        <ul>
+        <ul style="list-style-type:none">
         {% endif %}
     {% endif %}
 {% endfor %}

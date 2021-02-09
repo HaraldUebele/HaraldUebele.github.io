@@ -3,7 +3,6 @@ layout: post
 title: "Serverless and Knative - Part 2: Knative Serving"
 date: "2020-06-03"
 categories: [Knative,Kubernetes,Serverless]
-tag: "2020"
 ---
 
 In the [first part of this series](https://haralduebele.github.io/Installing-Knative/) I went through the installation of Knative on CodeReady Containers which is basically Red Hat OpenShift 4.4 running on a notebook.

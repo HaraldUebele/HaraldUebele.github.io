@@ -2,7 +2,6 @@
 layout: post
 title: "Blue Cloud Mirror - Of Kubes and Couches"
 date: "2019-02-01"
-tag: "2019"
 ---
 
 In my last blog I presented an overview and introduction to Blue Cloud Mirror. In this blog I want to describe the back end of the Users API.

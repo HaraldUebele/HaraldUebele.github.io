@@ -3,7 +3,6 @@ layout: post
 categories: [Kubernetes,OpenShift]
 title: "Deploy a Database into a Kubernetes Cluster with an Operator"
 date: "2019-08-22"
-tag: "2019"
 ---
 
 Kubernetes Operators are a Kubernetes extension that was introduced by CoreOS. On their [website](https://coreos.com/operators/){:target="_blank"} they explain it like this:

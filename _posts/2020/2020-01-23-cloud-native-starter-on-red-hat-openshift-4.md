@@ -3,7 +3,6 @@ layout: post
 categories: [Kubernetes,OpenShift]
 title: "Cloud Native Starter on Red Hat OpenShift 4"
 date: "2020-01-23"
-tag: "2020"
 ---
 
 I have written about [Cloud Native Starter](https://github.com/IBM/cloud-native-starter){:target="_blank"} many times in this blog. It is a project created by Niklas Heidloff, Thomas Südbröcker, and myself that demonstrates how to get started with cloud-native applications and microservice based architectures. We have started it on Minikube, and ported it to IBM Cloud Kubernetes Service and to Red Hat OpenShift in the form of Minishift and Red Hat OpenShift on IBM Cloud, the last two based on OpenShift version 3.

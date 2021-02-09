@@ -2,7 +2,6 @@
 layout: post
 title: "Blue Cloud Mirror -- (Don't) Open The Doors!"
 date: "2019-02-17"
-tag: "2019"
 ---
 
 This isn't specific to our game "Blue Cloud Mirror". Everyone trying to create a Hybrid Cloud will need to decide how to connect a local application in a secure manner with code running on the Cloud without fully opening "the doors". IBM offers a service called Secure Gateway exactly for this purpose. It creates a TLS encrypted tunnel (TLS v1.2) between a Secure Gateway Server on the IBM Cloud and a Secure Gateway Client installed on-premise in your private network. The connection is initiated from the Client so there shouldn't be any issues with your firewall.

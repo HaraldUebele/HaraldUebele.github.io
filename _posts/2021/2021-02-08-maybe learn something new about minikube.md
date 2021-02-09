@@ -3,7 +3,6 @@ layout: post
 categories: [Kubernetes]
 title: (Maybe) Learn something new about Minikube
 date: "2021-02-08"
-tag: "2021"
 excerpt_separator: <!--more-->
 published: true
 ---

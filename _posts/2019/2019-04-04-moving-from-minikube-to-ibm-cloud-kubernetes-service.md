@@ -3,7 +3,6 @@ layout: post
 categories: [Kubernetes]
 title: "Moving from Minikube to IBM Cloud Kubernetes Service"
 date: "2019-04-04"
-tag: "2019"
 ---
 
 In my last blog I have described a project we are working on: [Cloud Native Starter](https://github.com/ibm/cloud-native-starter){:target="_blank"}. It is a microservices architecture, written mostly in Java with Eclipse MicroProfile, and using many Istio features. We started to deploy on Minikube because that is easy to implement if you have a reasonably powerful notebook. Now that everything works on Minikube, I wanted to deploy it on the IBM Cloud, too, using IBM Cloud Kubernetes Service (IKS).

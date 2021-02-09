@@ -103,7 +103,7 @@ You need "layout: post" and you can add "categories" which will show up in the p
 
 Change `published: false` to `published: true` to make the post visible. 
 
-##### 5. Image links and subtitles
+##### d. Image links and subtitles
 
 Image links should look like this:
 
@@ -123,7 +123,7 @@ _This is a subtitle_
 
 The text is then centered and in italics ... look at the first image in this blog.
 
-##### 6. Open external links in new windows/tabs
+##### e. Open external links in new windows/tabs
 
 Github markdown cannot do this at its own. But you can simply add the HTML code ({:target="_blank"}) to the link:
 
@@ -131,7 +131,7 @@ Github markdown cannot do this at its own. But you can simply add the HTML code 
 [Knative Runtime Contract](https://github.com/knative/serving/blob/master/docs/runtime-contract.md){:target="_blank"}
 ```
 
-##### 7. Syntax highlighting
+##### f. Syntax highlighting
 
 The Reverie theme uses Pygments/Dracula to highlight code in preformatted sections. I found this to be helpful, especially with quoted YAML.
 
@@ -146,16 +146,16 @@ The Reverie theme uses Pygments/Dracula to highlight code in preformatted sectio
             be: yaml
     ```
 
-##### 8. Escape characters
+##### g. Escape characters
 
 Look out for `\` and remove them, they are not needed.
 
-#### Changes to the Theme
+#### 5. Changes to the Theme
 
 I made modifications to the theme, e.g. I changed the font family to IBM Plex Sans because that is my favorite font.
 
 I added "read time" to my posts based on this [article](https://int3ractive.com/blog/2018/jekyll-read-time-without-plugins/).
 
-Instead of the search page that is part of the Reverie theme I created an archive page that lists all my blogs sorted by year.
+Instead of the search page that is part of the Reverie theme I created an archive page that lists all my blogs sorted by year. This is based on Rafa Garrido's answer in this [Stackoverflow question](https://stackoverflow.com/questions/19086284/jekyll-liquid-templating-how-to-group-blog-posts-by-year).
 
 And some more stuff ... you can go over your top once you figured out how Jekyll works.

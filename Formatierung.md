@@ -3,46 +3,59 @@
 
 yyyy-mm-dd-title.md
 
-## Pre
-
+## Frontmatter
+```
 ---
 layout: post
-categories: [Kubernetes,Istio,Security,OpenShift]
-title: "Application Security from a Platform Perspective"
-date: "2020-09-03"
-tags: 
-  - "istio"
-  - "kubernetes"
-  - "openshift"
-  - "security"
+categories: [XX,YY]
+title: This is a new article
+date: "2021-MM-DD"
+tag: "2021"
+published: false
+excerpt_separator: <!--more-->
 ---
+```
 
 ## Bilder:
 
-![Kommentar](/images/yyyy/mm/source-sink.png)
+Pro Monat und Jahr ein Ordner unter /images
 
-Bildunterschrift zentriert:
+`![Kommentar](/images/yyyy/mm/source-sink.png)`
 
+Bildunterschrift (X) zentriert:
+
+```
 {:center: style="text-align: center"}
 _X_
 {:center}
+```
 
 ## Link in neuem Fenster öffnen
 
-[Knative Runtime Contract](https://github.com/knative/serving/blob/master/docs/runtime-contract.md){:target="_blank"}
+`[Knative Runtime Contract](https://github.com/knative/serving/blob/master/docs/runtime-contract.md){:target="_blank"}`
 
 ## Preformatted:
 
-```sh
-```
-```yaml
-```
+	```sh
+	```
 
-## Remove escape \
+	```yaml
+	```
 
+## Escape characters?
+
+Beim Exportieren könnten Escape Character \ eingefügt worden sein.
 
 # FYI
 
 ## Read time
 
 https://int3ractive.com/blog/2018/jekyll-read-time-without-plugins/
+
+## Render locally
+
+https://github.com/Starefossen/docker-github-pages
+
+docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+
+http://localhost:4000

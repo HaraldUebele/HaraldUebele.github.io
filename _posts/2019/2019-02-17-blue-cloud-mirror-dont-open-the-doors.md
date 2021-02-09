@@ -8,8 +8,10 @@ tag: "2019"
 This isn't specific to our game "Blue Cloud Mirror". Everyone trying to create a Hybrid Cloud will need to decide how to connect a local application in a secure manner with code running on the Cloud without fully opening "the doors". IBM offers a service called Secure Gateway exactly for this purpose. It creates a TLS encrypted tunnel (TLS v1.2) between a Secure Gateway Server on the IBM Cloud and a Secure Gateway Client installed on-premise in your private network. The connection is initiated from the Client so there shouldn't be any issues with your firewall.
 
 ![](/images/2019/02/diagramsgw.png?w=1000)
+{:center: style="text-align: center"}
+_IBM Secure Gateway_
+{:center}
 
-IBM Secure Gateway
 
 You can test a limited ("lite") version of IBM Secure Gateway with a free IBM Cloud account. Limited means you can connect to one destination which is one on-premise application with a limited amount of traffic (500 MB/month), sufficient for our needs with Blue Cloud Mirror.
 
@@ -17,7 +19,7 @@ The IBM Secure Gateway Service can be found in the "Integration" section of the 
 
 I wrote about the configuration of IBM Secure Gateway in the [Users](https://github.com/IBM/blue-cloud-mirror/tree/master/users){:target="_blank"} section of our Github repository. There are two things that may be confusing when you start to configure:
 
-1. _What is the difference between Client and Destination?_
+_1. What is the difference between Client and Destination?_
 
 The Secure Gateway Client is a piece of software that is installed on a server (physical or virtual) on-premise in your data center. It creates the connection to the IBM Secure Gateway service running on the IBM Cloud.
 

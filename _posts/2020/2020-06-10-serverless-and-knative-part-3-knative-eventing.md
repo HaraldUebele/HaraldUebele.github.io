@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Serverless and Knative – Part 3: Knative Eventing"
 date: "2020-06-10"
 categories: [Knative,Kubernetes,Serverless]
@@ -31,7 +32,7 @@ In this case, the source sends a message to a sink, there is no queuing or filte
 
 ![Source to Sink](/images/2020/06/source-sink.png)
 
-{:center: style="text-align: center"}
+{:center: style="font-size: 90%; text-align: center"}
 _(c) Red Hat, Inc._
 {:center}
 
@@ -110,7 +111,7 @@ Coming from the Source to Sink pattern in the previous section, the Source to Si
 
 ![Channels and Subscriptions](/images/2020/06/channels-subs.png)
 
-{:center: style="text-align: center"}
+{:center: style="font-size: 90%; text-align: center"}
 _(c) Red Hat, Inc._
 {:center}
 
@@ -162,7 +163,7 @@ I think this is were Knative Eventing gets interesting. Why would you install an
 
 ![Brokers and Triggers](/images/2020/06/brokers-triggers.png)
 
-{:center: style="text-align: center"}
+{:center: style="font-size: 90%; text-align: center"}
 _(c) Red Hat, Inc._
 {:center}
 

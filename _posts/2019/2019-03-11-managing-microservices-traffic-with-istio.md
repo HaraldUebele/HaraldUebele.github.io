@@ -37,7 +37,7 @@ The selector is only using the "app" label. Without Istio it will distribute tra
 Now comes the Istio part. Istio works with envoy proxies to control inbound and outbound traffic and to gather telemetry data of a Kubernetes pod. The envoy is injected as additional container into a pod. The envoy "sidecar" allows to add Istio's capabilities to an application without adding code or additional libraries to your application.
 
 ![](https://istio.io/docs/concepts/what-is-istio/arch.svg)
-{:center: style="text-align: center"}
+{:center: style="font-size: 90%; text-align: center"}
 _© istio.io_
 {:center}
 

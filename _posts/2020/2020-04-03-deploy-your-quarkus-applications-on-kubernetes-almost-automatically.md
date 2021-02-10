@@ -12,7 +12,7 @@ You want to code Java, not Kubernetes deployment YAML files? And you use Quarkus
 _The Kubernetes extension has been overhauled and now gives users the ability to deploy their Quarkus applications to Kubernetes or OpenShift with almost no effort. Essentially the extension now also takes care of generating a container image and applying the generated Kubernetes manifests to a target cluster, after the container image has been generated._"
 
 ![Quarkus Logo](/images/2020/04/quarkus_icon.png)
-{:center: style="text-align: center"}
+{:center: style="font-size: 90%; text-align: center"}
 _Image © quarkus.io_
 {:center}
 

@@ -21,7 +21,7 @@ You can create a free Kubernetes cluster (single node, 2 CPUs, 4 GB memory) that
 To create a Kubernetes cluster, select "Kubernetes" from the burger menu in the upper left corner of the IBM Cloud dashboard.
 
 ![](/images/2019/02/selection_355.png)
-{:center: style="text-align: center"}
+{:center: style="font-size: 90%; text-align: center"}
 _Create a free Kubernetes cluster on the IBM Cloud_
 {:center}
 
@@ -30,7 +30,7 @@ In the "Kubernetes" dashboard, select "Clusters" on the left, then click on "Cre
 Once the cluster is deployed and in status "Normal", go to the "Add-ons" tab.
 
 ![](/images/2019/02/selection_358.png)
-{:center: style="text-align: center"}
+{:center: style="font-size: 90%; text-align: center"}
 _Kubernetes Add-Ons on IBM Cloud_
 {:center}
 
@@ -63,7 +63,7 @@ gives the port number of the istio-ingress-gateway, typically 31380.
 Bookinfo productpage is then available at _http://publicIP:31380/productpage_
 
 ![](/images/2019/02/selection_360.png)
-{:center: style="text-align: center"}
+{:center: style="font-size: 90%; text-align: center"}
 _Istio Bookinfo Sample_
 {:center}
 
@@ -157,7 +157,7 @@ In my environment it is 192.168.99.100.
 So the Kiali Dashboard can be accessed at https://192.168.99.100:31993/kiali _Accessing the Dashboard requires to accept a security exception since it uses a self-signed TLS certificate!_  
 
 ![](/images/2019/02/selection_362.png)
-{:center: style="text-align: center"}
+{:center: style="font-size: 90%; text-align: center"}
 _Kiali Dashboard_
 {:center}
 

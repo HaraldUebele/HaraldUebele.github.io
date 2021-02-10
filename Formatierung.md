@@ -24,7 +24,7 @@ Pro Monat und Jahr ein Ordner unter /images
 Bildunterschrift (X) zentriert:
 
 ```
-{:center: style="text-align: center"}
+{:center: style="font-size: 90%; text-align: center"}
 _X_
 {:center}
 ```

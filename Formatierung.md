@@ -31,7 +31,7 @@ _X_
 
 ## Link in neuem Fenster öffnen
 
-`[Knative Runtime Contract](https://github.com/knative/serving/blob/master/docs/runtime-contract.md){:target="_blank"}`
+`[Knative Runtime Contract](https://runtime-contract.md){:target="_blank"}`
 
 ## Preformatted:
 

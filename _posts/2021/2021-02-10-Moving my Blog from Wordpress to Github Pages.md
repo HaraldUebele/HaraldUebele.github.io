@@ -3,7 +3,6 @@ layout: post
 title: Moving my Blog from Wordpress to Github Pages
 date: "2021-02-10"
 published: true
-comments_id: 1
 ---
 
 While I was still working as a Developer Advocate at IBM, I have maintained a blog on Wordpress.com. Now that I retired, I don't blog much. So I decided to let the Wordpress subscription expire by the end of this year, 2021. But I didn't want to trash all I wrote so I started to play with Github Pages, Jekyll, and other tools. As you can see I have successfully moved my blog to Github Pages, now.

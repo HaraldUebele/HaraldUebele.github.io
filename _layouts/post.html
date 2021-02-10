@@ -35,11 +35,5 @@ layout: default
     <p class="text-center"><span class="share-box"></i>Share via</span> <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</i></a></p>
   </div>
 
-  <div>
-		{% if page.comments_id %}
-			{% include comments.html %}
-		{% endif %}
-  </div>
-
   {% include disqus.html %}
 </article>

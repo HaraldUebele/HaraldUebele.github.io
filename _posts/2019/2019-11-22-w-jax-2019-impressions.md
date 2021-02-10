@@ -2,6 +2,7 @@
 layout: post
 title: "W-JAX 2019 Impressions"
 date: "2019-11-22"
+comments_id: 2
 ---
 
 I attended the W-JAX 2019 conference beginning of November in Munich. It is a big conference for software developers and had somewhere between 1300 and 1500 participants. Here are some impressions and pictures.

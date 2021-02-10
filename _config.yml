@@ -47,6 +47,7 @@ google_analytics: UA-189125995-1
 # Used for Sitemap.xml and your RSS feed
 url: http://HaraldUebele.github.io
 enforce_ssl: https://HaraldUebele.github.io
+ghrepo: haralduebele
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)

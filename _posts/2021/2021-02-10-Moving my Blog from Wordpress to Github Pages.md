@@ -159,8 +159,8 @@ Look out for `\` and remove them, they are not needed.
 
 I made modifications to the theme, e.g. I changed the font family in style.scss to IBM Plex Sans because that is my favorite font.
 
-I added "read time" to my posts based on this [article](https://int3ractive.com/blog/2018/jekyll-read-time-without-plugins/).
+I added "read time" to my posts based on this [article](https://int3ractive.com/blog/2018/jekyll-read-time-without-plugins/){:target="_blank"}.
 
-Instead of the search page that is part of the Reverie theme I created an archive page that lists all my blogs sorted by year. This is based on Rafa Garrido's answer in this [Stackoverflow question](https://stackoverflow.com/questions/19086284/jekyll-liquid-templating-how-to-group-blog-posts-by-year).
+Instead of the search page that is part of the Reverie theme I created an archive page that lists all my blogs sorted by year. This is based on Rafa Garrido's answer in this [Stackoverflow question](https://stackoverflow.com/questions/19086284/jekyll-liquid-templating-how-to-group-blog-posts-by-year){:target="_blank"}.
 
 And some more stuff ... you can go over your top once you figured out how Jekyll works.

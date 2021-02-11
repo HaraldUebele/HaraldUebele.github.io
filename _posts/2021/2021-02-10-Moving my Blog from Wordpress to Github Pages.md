@@ -3,6 +3,7 @@ layout: post
 title: Moving my Blog from Wordpress to Github Pages
 date: "2021-02-10"
 published: true
+last_modified_at: "2021-02-11"
 ---
 
 While I was still working as a Developer Advocate at IBM, I have maintained a blog on Wordpress.com. Now that I retired, I don't blog much. So I decided to let the Wordpress subscription expire by the end of this year, 2021. But I didn't want to trash all I wrote so I started to play with Github Pages, Jekyll, and other tools. As you can see I have successfully moved my blog to Github Pages, now.
@@ -164,3 +165,11 @@ I added "read time" to my posts based on this [article](https://int3ractive.com/
 Instead of the search page that is part of the Reverie theme I created an archive page that lists all my blogs sorted by year. This is based on Rafa Garrido's answer in this [Stackoverflow question](https://stackoverflow.com/questions/19086284/jekyll-liquid-templating-how-to-group-blog-posts-by-year){:target="_blank"}.
 
 And some more stuff ... you can go over your top once you figured out how Jekyll works.
+
+### Update: Comments section
+
+Github Pages uses Jekyll to create a static site. You can't include logic which would be needed to add comments.
+
+I looked at [Disqus](https://disqus.com/){:target="_blank"}, the Reverie theme I use is enabled for Disqus. It is an external service and the pages seem to get very heavy and heavily tracked, too.
+
+I read about the idea to use Github Issues to store the comments. I like it and looked at several examples. Then I found [utterances](https://utteranc.es/){:target="_blank"}. It is a Github App that you install in your repository, you do a little configuration, add a piece of code to the `post.html`. That's it. It just works. And its Open Source, too. So this is what you see below. 

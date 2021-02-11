@@ -5,7 +5,7 @@ date: "2020-06-10"
 categories: [Knative,Kubernetes,Serverless]
 ---
 
-This is part 3 of my blog series about Serverless and Knative. I covered [Installing Knative on CodeReady Containers](https://haralduebele.github.io/Installing-Knative/) in part 1 and [Knative Serving](https://haralduebele.github.io/Knative-Serving/) in part 2.
+This is part 3 of my blog series about Serverless and Knative. I covered [Installing Knative on CodeReady Containers](https://haralduebele.github.io/2020/06/02/serverless-and-knative-part-1-installing-knative-on-codeready-containers/){:target="_blank"} in part 1 and [Knative Serving](https://haralduebele.github.io/2020/06/03/serverless-and-knative-part-2-knative-serving/){:target="_blank"} in part 2.
 
 ![Knative logo](/images/2020/06/m5EQknfW_400x400.jpg)
 
@@ -18,7 +18,7 @@ Event producers can be anything:
 - Kafka Message Broker
 - Github repository
 - Kubernetes API Server emitting cluster events
-- and [many more](https://knative.dev/docs/eventing/sources/).
+- and [many more](https://knative.dev/docs/eventing/sources/){:target="_blank"}.
 
 An event consumer is any type of code running on Kubernetes (typically) that is callable. It can be a "classic" Kubernetes deployment and service, and of course in can be a Knative Service.
 

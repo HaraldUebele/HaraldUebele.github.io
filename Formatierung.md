@@ -1,3 +1,8 @@
+---
+layout: page
+title: Formatierung
+---
+
 
 ## Dateiname:
 
@@ -31,7 +36,7 @@ _X_
 
 ## Link in neuem Fenster öffnen
 
-`[Knative Runtime Contract](https://runtime-contract.md){:target="_blank"}`
+`[Knative Runtime Contract](https://runtime-contract.test){:target="_blank"}`
 
 ## Preformatted:
 

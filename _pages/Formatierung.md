@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Formatierung
+title: Formatting
+permalink: /format/
 ---
 
 
-## Dateiname:
+## File name:
 
 yyyy-mm-dd-title.md
 
@@ -20,13 +21,13 @@ excerpt_separator: <!--more-->
 ---
 ```
 
-## Bilder:
+## Images:
 
-Pro Monat und Jahr ein Ordner unter /images
+Folder for year and month under /images
 
-`![Kommentar](/images/yyyy/mm/source-sink.png)`
+`![Comment](/images/yyyy/mm/source-sink.png)`
 
-Bildunterschrift (X) zentriert:
+Image title (X) centered enclosed in:
 
 ```
 {:center: style="font-size: 90%; text-align: center"}
@@ -34,32 +35,44 @@ _X_
 {:center}
 ```
 
-## Link in neuem Fenster öffnen
+## Open link in new windows
+
+`{:target="_blank"}`
+
+E.g.
 
 `[Knative Runtime Contract](https://runtime-contract.test){:target="_blank"}`
 
-## Preformatted:
+## Preformatting:
+
+Bash
 
 	```sh
 	```
+
+YAML
 
 	```yaml
 	```
 
 ## Escape characters?
 
-Beim Exportieren könnten Escape Character \ eingefügt worden sein.
+Export could have included escape character `\` 
 
 # FYI
 
 ## Read time
 
-https://int3ractive.com/blog/2018/jekyll-read-time-without-plugins/
+Read time based on this:
+
+[https://int3ractive.com/blog/2018/jekyll-read-time-without-plugins/](https://int3ractive.com/blog/2018/jekyll-read-time-without-plugins/)
 
 ## Render locally
 
-https://github.com/Starefossen/docker-github-pages
+Helpful for editing
+
+[https://github.com/Starefossen/docker-github-pages](https://github.com/Starefossen/docker-github-pages)
 
 docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 
-http://localhost:4000
+Then open local version here [http://localhost:4000](http://localhost:4000)

@@ -29,8 +29,8 @@ As a developer, I would expect Knative to make my life easier (Knative claims th
 4. **Revision**: A specific version of a code deployment. Revisions are immutable. Revisions can be scaled up and down. Rules can be applied to the Route to direct traffic to specific Revisions.
 
 ![Kn object model](/images/2020/06/object_model.png)
-
-_(c) knative.dev_
+(c) knative.dev
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 Did I already mention that this is confusing? We now need to distinguish between Kubernetes services and Knative services. And on OpenShift, between OpenShift Routes and Knative Routes.
 

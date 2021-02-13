@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Serverless and Knative – Part 3: Knative Eventing"
+title: "Serverless and Knative - Part 3: Knative Eventing"
 date: "2020-06-10"
 categories: [Knative,Kubernetes,Serverless]
 ---
@@ -31,10 +31,8 @@ There are three usage patterns for Knative Eventing, the first one being the sim
 In this case, the source sends a message to a sink, there is no queuing or filtering, it is a one-to-one relationship.
 
 ![Source to Sink](/images/2020/06/source-sink.png)
-
-{:center: style="font-size: 90%; text-align: center"}
-_(c) Red Hat, Inc._
-{:center}
+(c) Red Hat, Inc.
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 Knative Event Sources are Knative objects. The following sources are installed when Knative is installed:
 
@@ -110,10 +108,8 @@ A Knative Subscription connects (= subscribes) a Sink service to a Channel. Each
 Coming from the Source to Sink pattern in the previous section, the Source to Sink relation is now replaced with a Source to Channel relation. One or multiple Sink services subscribe to the Channel:
 
 ![Channels and Subscriptions](/images/2020/06/channels-subs.png)
-
-{:center: style="font-size: 90%; text-align: center"}
-_(c) Red Hat, Inc._
-{:center}
+(c) Red Hat, Inc.
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 The Channel and Subscription pattern decouples the event producer (Source) from the event consumer (Sink) and allows for a one to many relation between Source and Sink. Every message / event emitted by the Source is forwarded to one or many Sinks that are subscribed to the Channel.
 
@@ -162,10 +158,8 @@ spec:
 I think this is were Knative Eventing gets interesting. Why would you install an overhead of resources (called Knative Eventing) into your Kubernetes cluster to simply send a message / event from one pod to another? But with an event broker that receives a multitude of different events and triggers that filter out a specific event and route that to a specific (micro) service I can see an advantage.
 
 ![Brokers and Triggers](/images/2020/06/brokers-triggers.png)
-
-{:center: style="font-size: 90%; text-align: center"}
-_(c) Red Hat, Inc._
-{:center}
+(c) Red Hat, Inc.
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 This is the slightly modified example from the [Red Hat Knative Tutorial](https://redhat-developer-demos.github.io/knative-tutorial/knative-tutorial-eventing/eventing-trigger-broker.html){:target="_blank"}:
 

@@ -14,9 +14,8 @@ Cloud Native Starter Vue.js frontend
 OpenShift 4 on the IBM Cloud is imminent and Minishift has a successor based on version 4 called [CodeReady Containers or CRC](https://haralduebele.github.io/2019/09/13/red-hat-openshift-4-on-your-laptop/){:target="_blank"}. Time to move Cloud Native Starter to OpenShift 4. Here is a summary of my experience.
 
 ![](/images/2020/01/logo-red_hat-codeready_containers-a-standard-rgb-profile-square-300x127-1.png?w=300)
-{:center: style="font-size: 90%; text-align: center"}
-_© Red Hat Inc._
-{:center}
+© Red Hat Inc.
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 #### Install CRC
 

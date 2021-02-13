@@ -27,13 +27,15 @@ Folder for year and month under /images
 
 `![Comment](/images/yyyy/mm/source-sink.png)`
 
-Image title (X) centered enclosed in:
+Image title with block attributes below:
 
 ```
-{:center: style="font-size: 90%; text-align: center"}
-_X_
-{:center}
+This is an image title
+{:style="color:gray;font-style:italic;font-size:90%;text-align:center;"}
 ```
+This is an image title
+{:style="color:gray;font-style:italic;font-size:90%;text-align:center;"}
+
 
 ## Open link in new windows
 

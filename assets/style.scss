@@ -217,6 +217,11 @@ img {
   max-width: 100%;
 }
 
+img[src*='#center'] { 
+  display: block;
+  margin: auto;
+}
+
 p > img {
   text-align: center;
   display: block;

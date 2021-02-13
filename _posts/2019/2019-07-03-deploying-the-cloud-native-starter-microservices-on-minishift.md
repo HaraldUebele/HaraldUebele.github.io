@@ -12,9 +12,8 @@ OpenShift enforces role based access control and security and thus enables stric
 So in order to start a new project on OpenShift/Minishift, you create a project and apply some security policies to it. The project automatically includes a Kubernetes namespace of the same name and an "[image stream](https://docs.openshift.com/enterprise/3.0/architecture/core_concepts/builds_and_image_streams.html#image-streams){:target="_blank"}" - also of the same name - to store Docker images in the OpenShift Docker registry. In my last [blog](https://haralduebele.github.io/2019/06/28/cloud-native-starter-and-openshift-okd-minishift/){:target="_blank"}, I wrote about Minishift setup and Istio installation and that Maistra, the Istio "flavour" I installed, is enforcing mTLS. Since we haven't implemented mTLS in Cloud Native Starter, we need to apply a [no-mtls](https://github.com/IBM/cloud-native-starter/blob/master/minishift-scripts/no-mtls.yaml){:target="_blank"} policy to our projects name space. The [setup-project.sh](https://github.com/IBM/cloud-native-starter/blob/master/minishift-scripts/setup-project.sh){:target="_blank"} script does exactly this.
 
 ![](/images/2019/07/selection_463.png)
-{:center: style="font-size: 90%; text-align: center"}
-_The final result in the Minishift Console_
-{:center}
+The final result in the Minishift Console
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 With Minikube, Docker images can be built in the Docker environment that runs in the VM (by using the `eval $(minikube docker-env)` command) and Kubernetes can pull the images directly from there.
 
@@ -49,7 +48,6 @@ And then I use `oc apply -f kubernetes-minishift.yaml` to create the Kubernetes 
 How can you access this service running on OpenShift? Again there are multiple options: OpenShift specific is to [create a route](https://github.com/IBM/cloud-native-starter/blob/master/minishift-scripts/deploy-web-app.sh){:target="_blank"} (`oc expose svc/web-app`). Or Istio specific by using the [Istio Ingress Gateway](https://github.com/IBM/cloud-native-starter/blob/master/istio/istio-ingress-gateway.yaml){:target="_blank"} and a [VirtualService](https://github.com/IBM/cloud-native-starter/blob/master/istio/istio-ingress-service-web-api-v1-only.yaml){:target="_blank"} using the Gateway.
 
 ![](/images/2019/07/selection_464.png)
-{:center: style="font-size: 90%; text-align: center"}
-_Cloud Native Starter in the Kiali dashboard_
-{:center}
+Cloud Native Starter in the Kiali dashboard
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 

@@ -9,9 +9,8 @@ last_modified_at: "2021-02-11"
 While I was still working as a Developer Advocate at IBM, I have maintained a blog on Wordpress.com. Now that I retired, I don't blog much. So I decided to let the Wordpress subscription expire by the end of this year, 2021. But I didn't want to trash all I wrote so I started to play with Github Pages, Jekyll, and other tools. As you can see I have successfully moved my blog to Github Pages, now.
 
 ![Moving](/images/2021/02/move-1015582_640.jpg)
-{:center: style="font-size: 90%; text-align: center"}
-_Image by <a href="https://pixabay.com/de/users/peggy_marco-1553824/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015582">Peggy und Marco Lachmann-Anke</a> on <a href="https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015582">Pixabay</a>_
-{:center}
+Image by <a href="https://pixabay.com/de/users/peggy_marco-1553824/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015582">Peggy und Marco Lachmann-Anke</a> on <a href="https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015582">Pixabay</a>
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 I have used Github Pages before to write the instructions for workshops but have always used one of the Github built-in themes. But they don't work well for blogs. There are many other, Jekyll-based themes that can be used with Github Pages and work for blogs. 
 
@@ -117,16 +116,14 @@ Image links should look like this:
 
 This assumes that you also sort the images into years and months folders.
 
-On Wordpress I sometimes used subtitles under images. In the converted blog entries, the subtitles are simply text, which doesn't really look good. I use some code around them like this:
+On Wordpress I sometimes used subtitles under images. In the converted blog entries, the subtitles are simply text, which doesn't really look good. I use a code block like this:
 
 ```
-{:center: style="font-size: 90%; text-align: center"}
-_The text is then centered, smaller, and in italics_
-{:center}
+The text is then centered, smaller, and in italics
+{:style="color:gray;font-style:italic;font-size:90%;text-align:center;"}
 ```
-{:center: style="font-size: 90%; text-align: center"}
-_The text is then centered, smaller, and in italics_
-{:center}
+The text is then centered, smaller, and in italics
+{:style="color:gray;font-style:italic;font-size:90%;text-align:center;"}
 
 
 ##### e. Open external links in new windows/tabs

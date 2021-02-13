@@ -9,23 +9,20 @@ I attended the W-JAX 2019 conference beginning of November in Munich. It is a bi
 This is the team preparing our booth: unpacking, setting up the background
 
 ![](/images/2019/11/w-jax5.jpg?w=1024)
-{:center: style="font-size: 90%; text-align: center"}
-_front: Miriam and Thomas, back: Niklas and myself_
-{:center}
+Front: Miriam and Thomas, back: Niklas and myself
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 Jason McGee, IBM Fellow, Vice President and CTO of IBM Cloud Platform gave a keynote on "[The 20 Year Platform – bringing together Kubernetes, 12-Factor and Functions](https://jax.de/cloud-container-serverless/the-20-year-platform-bringing-together-kubernetes-12-factor-and-functions/){:target="_blank"}".
 
 ![](/images/2019/11/w-jax3.jpg?w=1024)
-{:center: style="font-size: 90%; text-align: center"}
-_Full house for Jason McGee_
-{:center}
+Full house for Jason McGee
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 Emily Jiang, our MicroProfile hero from the IBM Hursley lab, did On Stage Hacking: "[Building a 12-Factor Microservice](https://jax.de/serverside-enterprise-java/on-stage-hacking-building-a-12-factor-microservice/){:target="_blank"}":
 
 ![](/images/2019/11/twitter-1.png?w=595)
-{:center: style="font-size: 90%; text-align: center"}
-_l2r: Thomas, Miriam, Niklas, Emily, Harald_
-{:center}
+L2R: Thomas, Miriam, Niklas, Emily, Harald
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 Grace Jansen, Developer Advocate and also from the IBM Hursley lab, presented "[Reacting to the Future of Application Architecture](https://jax.de/software-architecture/reacting-to-the-future-of-application-architecture/){:target="_blank"}" :
 
@@ -48,9 +45,8 @@ Between the talks we were quite busy at the booth:
 Some people work at a new career path as movie star :-)
 
 ![](/images/2019/11/w-jax6.jpg?w=1024)
-{:center: style="font-size: 90%; text-align: center"}
-_Thomas is interviewed by the W-JAX team_
-{:center}
+Thomas is interviewed by the W-JAX team
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 And of course [Blue Cloud Mirror](https://github.com/IBM/blue-cloud-mirror){:target="_blank"}, our Open Source game project, was an attraction at the booth:
 
@@ -59,9 +55,8 @@ And of course [Blue Cloud Mirror](https://github.com/IBM/blue-cloud-mirror){:tar
 The team on day 1:
 
 ![](/images/2019/11/w-jax7.jpg?w=1024)
-{:center: style="font-size: 90%; text-align: center"}
-_l2r: Andrea, Niklas, Miguel, Harald, Miriam, Jason, Thomas_
-{:center}
+L2R: Andrea, Niklas, Miguel, Harald, Miriam, Jason, Thomas
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 Thomas posted a [cool video](https://twitter.com/i/status/1192094720559865858){:target="_blank"} on Twitter:
 

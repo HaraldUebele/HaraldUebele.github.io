@@ -8,9 +8,8 @@ categories: [Kubernetes,Istio,Security,OpenShift]
 We have added an application security example to our pet project [Cloud Native Starter](https://github.com/IBM/cloud-native-starter/tree/master/security){:target="_blank"}.
 
 ![Diagram](/images/2020/08/diagram.png?w=1024)
-{:center: style="font-size: 90%; text-align: center"}
-_Picture 1: Application Architecture_
-{:center}
+Picture 1: Application Architecture
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 The functionality of our sample is this:
 
@@ -31,9 +30,8 @@ We also created an app security workshop from it, the material is publicly avail
 In this article I want to talk about application security from the platform side. This is what we cover in the above mentioned workshop:
 
 ![Istio Security Architecture](/images/2020/08/istiosecurityarchitecture.png?w=904)
-{:center: style="font-size: 90%; text-align: center"}
-_Picture 2: Platform view of the Cloud Native Starter security sample_
-{:center}
+Picture 2: Platform view of the Cloud Native Starter security sample
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 There are two things that I want to write about:
 
@@ -73,9 +71,8 @@ Or use both, the certificate management system to manage your TLS certificates a
 We didn't cover adding a certificate management system or a KMS in our workshop to keep it simple. But there is a huge documentation section on many aspects of [protecting sensitive information in your cluster](https://cloud.ibm.com/docs/containers?topic=containers-encryption){:target="_blank"} on the IBM Cloud:
 
 ![](/images/2020/09/cs_encrypt_ov_kms.png)
-{:center: style="font-size: 90%; text-align: center"}
-_Picture 3 (c) IBM Corp._
-{:center}
+Picture 3 (c) IBM Corp.
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 
 ### Istio Security
@@ -87,9 +84,8 @@ In our example we set up Istio with "pod auto-injection" enabled for the `defaul
 The Istio control plane contains a certificate authority (CA) that can manage keys and certificates. This Istio CA creates a X.509 certificate for every Envoy proxy and this certificate can be used for encryption and authentication in the service mesh.
 
 ![](/images/2020/09/istio-id-prov.png)
-{:center: style="font-size: 90%; text-align: center"}
-_Picture 4 (c) istio.io_
-{:center}
+Picture 4 (c) istio.io
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 You can see in Picture 4 that each of our pods is running an Envoy sidecar and each sidecar holds a (X.509) certificate, including the Istio Ingress which is of course part of the service mesh, too.
 

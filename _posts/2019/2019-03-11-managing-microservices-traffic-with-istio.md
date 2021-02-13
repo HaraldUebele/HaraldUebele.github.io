@@ -36,10 +36,9 @@ The selector is only using the "app" label. Without Istio it will distribute tra
 
 Now comes the Istio part. Istio works with envoy proxies to control inbound and outbound traffic and to gather telemetry data of a Kubernetes pod. The envoy is injected as additional container into a pod. The envoy "sidecar" allows to add Istio's capabilities to an application without adding code or additional libraries to your application.
 
-![](https://istio.io/docs/concepts/what-is-istio/arch.svg)
-{:center: style="font-size: 90%; text-align: center"}
-_© istio.io_
-{:center}
+![](/images/2019/03/istio-arch.png)
+© istio.io
+{: style="color:gray;font-style: italic; font-size: 90%; text-align: center;"}
 
 To route traffic (e.g. REST API calls) into a Kubernetes application normally requires a Kubernetes Ingress. With Istio, the equivalent is a Istio Gateway which allows it to manage and monitor incoming traffic. This gateway in turn uses the Istio ingressgateway which is a pod running in Kubernetes. This is the definition of an Istio gateway:
 

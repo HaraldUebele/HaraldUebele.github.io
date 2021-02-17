@@ -5,9 +5,11 @@ permalink: /format/
 ---
 
 
-## File name:
+## Filename:
 
-yyyy-mm-dd-title.md
+Blog posts go into `_posts/yyyy` directory, filename:
+
+_posts/yyyy/yyyy-mm-dd-title.md
 
 ## Frontmatter
 ```

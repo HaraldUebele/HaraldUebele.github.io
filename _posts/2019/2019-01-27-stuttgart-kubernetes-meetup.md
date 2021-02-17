@@ -7,7 +7,7 @@ allow_comments: "yes"
 
 Last Thursday night was the [Stuttgart Kubernetes Meetup](https://www.meetup.com/Stuttgart-Kubernetes-Meetup/events/256940404/){:target="_blank"}, hosted by CGI in Echterdingen (thanks!!!). I got the chance to talk about "Project Eirini".
 
-![](images/Eirini-4color-dark.png)
+![Eirini logo](/images/2019/01/eirini.jpeg)
 
 There is Kubernetes and there is Cloud Foundry. Both are Cloud PaaS platforms, both offer container orchestration and scheduling, and both are available on the IBM Cloud. While Kubernetes is all about container orchestration, Cloud Foundry is a developer experience where the concept of containers is pretty much hidden from the developer. Both have their strengths and weaknesses: You can do almost anything with Kubernetes but it has a steep learning curve, as a developer you have to know a lot about orchestration. Cloud Foundry is limited to stateless or 12-factor apps but as a developer you only focus on your code, Cloud Foundry takes care of the rest.
 

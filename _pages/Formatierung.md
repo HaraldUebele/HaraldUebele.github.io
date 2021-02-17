@@ -86,3 +86,8 @@ Helpful for editing
 docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 
 Then open local version here [http://localhost:4000](http://localhost:4000)
+
+## Theme
+
+Blog is based on the [Reverie](https://github.com/amitmerchant1990/reverie) theme.
+

@@ -16,10 +16,16 @@ layout: post
 categories: [XX,YY]
 title: This is a new article
 date: "2021-MM-DD"
+last_modified_at: "2021-MM-DD"
 published: false
 excerpt_separator: <!--more-->
+allow_comments: "yes"
 ---
 ```
+
+excerpt_separator: `<!--more-->`  --> Place the seperator after the text to be displayed in blog summary. Helpful if first paragraph is very short.  
+
+allow_comments: "no" disables the comments (utteranc.es) section
 
 ## Images:
 

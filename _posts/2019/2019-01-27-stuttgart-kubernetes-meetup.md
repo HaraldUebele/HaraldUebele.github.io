@@ -2,6 +2,7 @@
 layout: post
 title: "Stuttgart Kubernetes Meetup"
 date: "2019-01-27"
+allow_comments: "yes"
 ---
 
 Last Thursday night was the [Stuttgart Kubernetes Meetup](https://www.meetup.com/Stuttgart-Kubernetes-Meetup/events/256940404/){:target="_blank"}, hosted by CGI in Echterdingen (thanks!!!). I got the chance to talk about "Project Eirini".

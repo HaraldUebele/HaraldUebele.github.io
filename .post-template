@@ -3,5 +3,7 @@ layout: post
 categories: [XX,YY]
 title: This is a new article
 date: "2021-MM-DD"
+last_modified_at: "2021-MM-DD"
 excerpt_separator: <!--more-->
+allow_comments: "yes"
 ---

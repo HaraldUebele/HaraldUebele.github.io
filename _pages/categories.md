@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /categories/
-title: Categories
+title: Blog entries by categories
 ---
 
 
@@ -14,11 +14,17 @@ title: Categories
     
     <h3 class="category-head">{{ category_name }}</h3>
     <a name="{{ category_name | slugize }}"></a>
+    <ul>
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></h4>
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></li>
     </article>
     {% endfor %}
+    </ul>
   </div>
 {% endfor %}
 </div>
+
+<hr>
+<h3>Blog entries by <a href="{{ site.baseurl }}/archive">year</a></h3>
+{:style="text-align:center;"}

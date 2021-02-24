@@ -114,7 +114,7 @@ Image links should look like this:
 ![description](/images/yyyy/mm/imagename.ext)
 ```
 
-This assumes that you also sort the images into years and months folders.
+This assumes that you also sort your images into years and months folders.
 
 On Wordpress I sometimes used subtitles under images. In the converted blog entries, the subtitles are simply text, which doesn't really look good. I use a code block like this:
 
@@ -151,11 +151,11 @@ The Reverie theme uses Pygments/Dracula to highlight code in preformatted sectio
 
 ##### g. Escape characters
 
-Look out for `\` and remove them, they are not needed.
+Look out for backslashes `\` and remove them, they are not needed.
 
 #### 5. Changes to the Theme
 
-I made modifications to the theme, e.g. I changed the font family in style.scss to IBM Plex Sans because that is my favorite font.
+I made modifications to the theme, e.g. I changed the font family in style.scss to IBM Plex because that is my favorite font.
 
 I added "read time" to my posts based on this [article](https://int3ractive.com/blog/2018/jekyll-read-time-without-plugins/){:target="_blank"}.
 
@@ -165,8 +165,8 @@ And some more stuff ... you can go over your top once you figured out how Jekyll
 
 ### Update: Comments section
 
-Github Pages uses Jekyll to create a static site. You can't include logic which would be needed to add comments.
+Github Pages uses Jekyll to create a static site. This means you can't include logic which would be needed to add comments.
 
-I looked at [Disqus](https://disqus.com/){:target="_blank"}, the Reverie theme I use is enabled for Disqus. It is an external service and the pages seem to get very heavy and heavily tracked, too.
+I looked at [Disqus](https://disqus.com/){:target="_blank"}, the Reverie theme I use is enabled for Disqus. It is an external service and the pages with Disqus added seem to get very heavy and heavily tracked, too.
 
-I read about the idea to use Github Issues to store the comments. I like it and looked at several examples. Then I found [utterances](https://utteranc.es/){:target="_blank"}. It is a Github App that you install in your repository, you do a little configuration, add a piece of code to the `post.html`. That's it. It just works. And its Open Source, too. So this is what you see below. 
+I read about the idea to use Github Issues to store the comments. I like this idea and looked at several examples. Then I found [utterances](https://utteranc.es/){:target="_blank"}. It is a Github App that you install in your repository, you do a little configuration, add a piece of code to the `post.html`. That's it. It just works. And its Open Source, too. So this is what you see below. 

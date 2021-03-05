@@ -15,3 +15,12 @@ I started to work with and use “The Cloud” in 2014 with IBM Bluemix which wa
 ### Contact me
 
 You can find me on [Twitter](https://twitter.com/Harald_U){:target="_blank"}, [LinkedIn](https://www.linkedin.com/in/harald-uebele-9ab3ba1a4){:target="_blank"}, and [Xing](https://www.xing.com/profile/Harald_Uebele){:target="_blank"}. 
+
+### Copyright
+
+© Harald Uebele
+
+The editorial content of this blog is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+![cc-by-nc-sa](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+

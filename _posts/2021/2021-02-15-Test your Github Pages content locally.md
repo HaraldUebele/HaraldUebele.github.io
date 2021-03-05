@@ -2,6 +2,7 @@
 layout: post
 title: Test your Github Pages content locally
 date: "2021-02-15"
+allow_comments: "yes"
 ---
 
 I am using Github Pages, for this blog, and for some [workshops](https://harald-u.github.io/security-and-microservices/){:target="_blank"}, tutorials, etc. Github Pages uses Jekyll to render the pages and there are instructions on how to setup Jekyll locally to test your content before publishing. I never managed to get them to work, I am not a Ruby expert and something was always missing.

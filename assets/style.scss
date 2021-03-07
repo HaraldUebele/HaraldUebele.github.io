@@ -403,6 +403,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    font-family: 'IBM Plex Sans', sans-serif;
   }
 }
 
@@ -426,6 +427,7 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 body:after {
@@ -472,7 +474,8 @@ body:after {
 }
 
 .author_title{
-  text-align: left;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
   color: #939aa1;
   letter-spacing: 2px;
 }
@@ -480,6 +483,7 @@ body:after {
 .post_date{
   text-align: left;
   color: #939aa1;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .cd-container a {

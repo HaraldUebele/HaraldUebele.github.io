@@ -13,7 +13,7 @@ layout: default
             {{ post.date | date: "%B %e, %Y" }}
 
             {% if post.last_modified_at %}
-            &mdash; Updated: {{ post.last_modified_at | date: "%b %-d, %Y" }} 
+            &mdash; Modified: {{ post.last_modified_at | date: "%b %-d, %Y" }} 
             {% endif %}
 
             {% include read-time.html content=post.content %}

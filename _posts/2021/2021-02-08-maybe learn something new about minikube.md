@@ -3,6 +3,7 @@ layout: post
 categories: [Kubernetes]
 title: (Maybe) Learn something new about Minikube
 date: "2021-02-08"
+last_modified_at: "2021-03-19"
 excerpt_separator: <!--more-->
 published: true
 ---
@@ -39,6 +40,11 @@ You may have a setting like:
 That is ancient, `vm-driver` as a parameter has been deprecated for quite some time.
 
 Initial start of a Minikube cluster will take some time because it needs to download the Docker image but consecutive starts should be a lot faster.
+
+**Update** It seems that on Mac and Windows networking is different because of Docker Desktop: 
+
+* In many workshops I use NodePorts to access deployed applications. I use `$(minikube ip)` to determine the worker nodes IP address and `kubectl get svc XXX --output 'jsonpath={.spec.ports[*].nodePort}` to get the corresponding nodeport.
+* You should use `minikube service XXX` to access the service or `minikube service XXX --url` to get the URL, instead. This seems to use `minikube tunnel` (see below) under the covers to gain access to the service. 
 
 I found more interesting features that I didn't know before:
 

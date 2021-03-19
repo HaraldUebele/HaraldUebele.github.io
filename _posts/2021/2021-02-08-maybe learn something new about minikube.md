@@ -46,6 +46,8 @@ Initial start of a Minikube cluster will take some time because it needs to down
 * In many workshops I use NodePorts to access deployed applications. I use `$(minikube ip)` to determine the worker nodes IP address and `kubectl get svc XXX --output 'jsonpath={.spec.ports[*].nodePort}` to get the corresponding nodeport.
 * You should use `minikube service XXX` to access the service or `minikube service XXX --url` to get the URL, instead. This seems to use `minikube tunnel` (see below) under the covers to gain access to the service. 
 
+---
+
 I found more interesting features that I didn't know before:
 
 ### 2. Minikube Service

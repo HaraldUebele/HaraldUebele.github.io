@@ -19,15 +19,11 @@ One of the easiest ways to test it is using Minikube. I wrote about Minikube bef
 
 ![](/images/2019/08/selection_487.png)
 
-I cloned the Github repository of [Operator Lifecycle Manager](https://github.com/operator-framework/operator-lifecycle-manager){:target="_blank"} (OLM) which
+I cloned the Github repository of [Operator Lifecycle Manager](https://github.com/operator-framework/operator-lifecycle-manager){:target="_blank"} (OLM) which enables users to do the following:
 
-> ... enables users to do the following:
-
-> - Define applications as a single Kubernetes resource that encapsulates requirements and metadata
-> 
-> - Install applications automatically with dependency resolution or manually with nothing but `kubectl`
-> 
-> - Upgrade applications automatically with different approval policies ...
+- Define applications as a single Kubernetes resource that encapsulates requirements and metadata
+- Install applications automatically with dependency resolution or manually with nothing but `kubectl`
+- Upgrade applications automatically with different approval policies ...
 
 There is an [installation guide](https://github.com/operator-framework/operator-lifecycle-manager/blob/master/Documentation/install/install.md){:target="_blank"} and I tried to follow the instructions "Run locally with minikube" but that failed, no idea why. I then simply did the "Manual Installation" and this works perfect on Minikube, too:
 

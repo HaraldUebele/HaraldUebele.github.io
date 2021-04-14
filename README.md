@@ -1,6 +1,6 @@
 # Harald Uebele's Blog
 
-The blog is pubished using Github Pages here: [https://HaraldUebele.github.io](https://HaraldUebele.github.io).
+The blog is pubished using Github Pages, you can read it [here](https://HaraldUebele.github.io).
 
 
 

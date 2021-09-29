@@ -2,12 +2,15 @@
 layout: post
 title: "Serverless and Knative - Part 1: Installing Knative on CodeReady Containers"
 date: "2020-06-02"
+last_modified_at: "2021-09-29"
 categories: [Knative,Kubernetes,Serverless]
 ---
 
 I have worked with Kubernetes for quite some time now, also with Istio Service Mesh. Recently I decided that I want to explore Knative and its possibilities.
 
 ![Knative logo](/images/2020/06/m5EQknfW_400x400.jpg)
+
+**Note:** This blog post and the following 2 posts on Knative are based on Red Hat OpenShift. The instructions unfortunately don't seem to work anymore and are also based on a very old version of Knative (v0.12). As I no longer have access to OpenShift (I retired from IBM) I can't update the blog articles with tested and working instructions. But if you want to have a more current Knative Serving experience based on Minikube, you can test drive a [workshop](https://harald-u.github.io/knative-on-minikube/){:target="_blank"} I have created. It is currently based on Knative v0.26.
 
 So what is Knative? The [Knative web site](https://knative.dev/){:target="_blank"} describes it as "components build on top of Kubernetes, abstracting away the complex details and enabling developers to focus on what matters." It has two distinct components, originally it were three:
 

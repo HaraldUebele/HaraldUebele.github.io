@@ -22,3 +22,4 @@ Eirini replaces Diego with Kubernetes (actually it gives you a choice between th
 Eirini uses a mechanism published by buildpacks.io, it creates a container image instead of a droplet, plus it creates a helm chart, and deploys the application as stateful set directly into Kubernetes. The application is visible in Kubernetes and the Kubernetes cluster can be used to run other Kubernetes native applications as well.
 
 This is the [Eirini repository](https://github.com/cloudfoundry-incubator/eirini){:target="_blank"} on Github, it contains information on how to run CF Containerization and Eirini together. In December 2018, Eirini has passed the Cloud Foundry Acceptance tests and should be production ready in a while.
+

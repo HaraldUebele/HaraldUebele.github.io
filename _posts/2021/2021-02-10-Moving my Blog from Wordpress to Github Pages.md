@@ -3,7 +3,7 @@ layout: post
 title: Moving my Blog from Wordpress to Github Pages
 date: "2021-02-10"
 published: true
-last_modified_at: "2021-02-11"
+last_modified_at: "2022-01-05"
 ---
 
 While I was still working as a Developer Advocate at IBM, I have maintained a blog on Wordpress.com. Now that I retired, I don't blog much. So I decided to let the Wordpress subscription expire by the end of this year, 2021. But I didn't want to trash all I wrote so I started to play with Github Pages, Jekyll, and other tools. As you can see I have successfully moved my blog to Github Pages, now.
@@ -14,11 +14,19 @@ Image by <a href="https://pixabay.com/de/users/peggy_marco-1553824/?utm_source=l
 
 I have used Github Pages before to write the instructions for workshops but have always used one of the Github built-in themes. But they don't work well for blogs. There are many other, Jekyll-based themes that can be used with Github Pages and work for blogs. 
 
-#### 1. Select a theme for Github Pages
+#### 1. Prepare a Github repository
+
+First of all you need a Github public repository named `yourgithubusername.github.io`. 
+
+If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right. 
+
+The full URL of my repository is `https://github.com/haralduebele/haralduebele.github.io` and Github Pages will serve its content on `https://haralduebele.github.io`. This is called a user or organisation site.
+
+#### 2. Select a theme for Github Pages
 
 The one I selected is called ["Reverie"](https://github.com/amitmerchant1990/reverie){:target="_blank"}. I tried it, liked it, modified it and that is what you are looking at right now. The README has great setup instructions.
 
-You need a Github repository named `yourgithubusername.github.io`. Mine is evidently named `haralduebele.github.io` and this is also the URL that the blog will be served from.
+
 
 You need to modify `_config.yml`, too, before you can see something meaningful.
 
@@ -32,7 +40,7 @@ This duplicates the URL format for blog posts from Wordpress.com.
 
 Once you commit and push your changes, it will take a moment and then you can view your new site.
 
-#### 2. Pack your crates
+#### 3. Pack your crates
 
 You can export your content on Wordpress.com under 'Tools' - 'Export'. 
 
@@ -45,7 +53,7 @@ Exported content will be a ZIP file with a XML document. The exported media libr
 What do you do with the huge Wordpress XML? Somebody (Will Boyd, lonekorean)
 already thought of that:
 
-#### 3. Convert Wordpress XML to MarkDown
+#### 4. Convert Wordpress XML to MarkDown
 
 I found a pretty good tool [here](https://github.com/lonekorean/wordpress-export-to-markdown){:target="_blank"}. 
 
@@ -59,7 +67,7 @@ I had it create folders for years and months. Output looks something like this:
 
 `index.md` is the actual post. If there is an images folder, it will contain all the images the tool was able to grab or scrape from the XML.
 
-#### 4. Complete the conversion
+#### 5. Complete the conversion
 
 "wordpress-export-to-markdown" does a pretty good job but it does require moving files and some manual touch up to the blog posts.
 
@@ -153,7 +161,7 @@ The Reverie theme uses Pygments/Dracula to highlight code in preformatted sectio
 
 Look out for backslashes `\` and remove them, they are not needed.
 
-#### 5. Changes to the Theme
+#### 6. Changes to the Theme
 
 I made modifications to the theme, e.g. I changed the font family in style.scss to IBM Plex because that is my favorite font.
 
@@ -169,4 +177,4 @@ Github Pages uses Jekyll to create a static site. This means you can't include l
 
 I looked at [Disqus](https://disqus.com/){:target="_blank"}, the Reverie theme I use is enabled for Disqus. It is an external service and the pages with Disqus added seem to get very heavy and heavily tracked, too.
 
-I read about the idea to use Github Issues to store the comments. I like this idea and looked at several examples. Then I found [utterances](https://utteranc.es/){:target="_blank"}. It is a Github App that you install in your repository, you do a little configuration, add a piece of code to the `post.html`. That's it. It just works. And its Open Source, too. So this is what you see below. 
+I read about the idea to use Github Issues to store the comments. I like this idea and looked at several examples. Then I found [utterances](https://utteranc.es/){:target="_blank"}. It is a Github App that you install in your repository, you do a little configuration, add a piece of code to the `post.html`. That's it. It just works. And its Open Source, too. Data is stored as Github Issues, there is no tracking and no ads.  So this is what you see below. 

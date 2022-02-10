@@ -501,6 +501,13 @@ body:after {
   font-weight: bold;
 }
 
+.cookie-btn{
+  color: #000000;
+  background-color: #aeced6;
+  border-color: #000000;
+  margin: 6px;
+}
+
 /* --------------------------------
 
 Modules - reusable parts of our design
@@ -1147,6 +1154,14 @@ Modules - reusable parts of our design
     transform: translateX(0);
   }
 }
+
+.btn-theme {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+  margin: 4px;
+}
+
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

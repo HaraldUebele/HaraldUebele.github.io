@@ -38,3 +38,5 @@ The editorial content of this blog is licensed under a [Creative Commons Attribu
 
 ![cc-by-nc-sa](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 
+The theme of this blog is based on the [Reverie](https://github.com/amitmerchant1990/reverie) theme, © Amit Merchant.
+

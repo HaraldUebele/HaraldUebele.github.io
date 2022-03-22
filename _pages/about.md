@@ -16,19 +16,19 @@ I started to work with and use “The Cloud” in 2014 with IBM Bluemix which wa
 
 You can find me on [Twitter](https://twitter.com/Harald_U){:target="_blank"}, [LinkedIn](https://www.linkedin.com/in/harald-uebele-9ab3ba1a4){:target="_blank"}, and [Xing](https://www.xing.com/profile/Harald_Uebele){:target="_blank"}. 
 
-### Cookies, Data Protection, GDPR
+### External Functions, Cookies, Data Protection, GDPR
 
-This blog does not utilize cookies, it doesn't use analytics in any form, and it doesn't store any of your personal data. 
+For this blog I don't use cookies, I don't use analytics in any form, and I don't store any of your personal data. 
 
-It is hosted on Github Pages and Github will store data like your IP address in logs, etc. See [Usage information](https://docs.github.com/en/github/site-policy/github-privacy-statement#usage-information){:target="_blank"} and [Device information](https://docs.github.com/en/github/site-policy/github-privacy-statement#device-information){:target="_blank"}.  
+The blog is hosted on Github Pages and Github will store data like your IP address in logs, etc. See [Usage information](https://docs.github.com/en/github/site-policy/github-privacy-statement#usage-information){:target="_blank"} and [Device information](https://docs.github.com/en/github/site-policy/github-privacy-statement#device-information){:target="_blank"}.  
 
 I use [Google Fonts](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users) and Google will most likely also log your IP address etc.
 
-If you leave a comment under a blog entry, it is stored as a Github Issue in the same repository that holds the raw blog data using a widget called [Utterances](https://utteranc.es){:target="_blank"}. The author/s of Utterances promise/s not to use any tracking.
+If you leave a comment under a blog entry, it is stored as a Github Issue in the same Github repository that holds the raw blog data using a widget called [Utterances](https://utteranc.es){:target="_blank"}. The author/s of Utterances promise/s not to use any tracking.
 
 ### External links
 
-This blog contains links to external websites over which I have no influence. The respective provider or operator of the pages is responsible for the content of the linked pages. I checked the linked pages for possible legal violations at the time of linking, illegal content was not recognizable at that time. Should any legal problem become known to me, I will remove the respective link immediately.
+This blog contains links to external websites over which I have no influence. The respective provider or operator of the pages is responsible for the content of the linked pages. I checked the linked pages for possible legal violations at the time of linking, illegal content was not recognizable at that time otherwise I wouldn't have linked to it. Should any legal problem become known to me, I will remove the respective link immediately.
 
 ### Copyright
 

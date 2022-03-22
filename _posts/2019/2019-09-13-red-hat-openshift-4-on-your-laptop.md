@@ -2,6 +2,7 @@
 layout: post
 title: "Red Hat OpenShift 4 on your laptop"
 date: "2019-09-13"
+last_modified_at: "2022-03-22"
 categories: [Kubernetes,OpenShift]
 ---
 
@@ -23,7 +24,7 @@ The Getting Started quide lists the hardware requirements, they are similar to t
 
 You will also find the required versions of Windows 10 and MacOS there.
 
-I am running Fedora (F30 at the moment) on my notebook and I normally use VirtualBox as hypervisor. VirtualBox is not supported so I had to install KVM first, here are good [instructions](https://computingforgeeks.com/how-to-install-kvm-on-fedora/){:target="_blank"}. The requirements for CRC also mention NetworkManager as required but most Linux distributions will use it, Fedora certainly does. There are additional instructions for Ubuntu/Debian/Mint users for libvirt in the Getting Started guide.
+I am running Fedora (F30 at the moment) on my notebook and I normally use VirtualBox as hypervisor. VirtualBox is not supported so I had to install KVM first, here are good [instructions](https://computingforgeeks.com/how-to-install-kvm-on-fedora/){:target="_blank"}. The requirements for CRC also mention NetworkManager as required but most Linux distributions will use it, Fedora certainly does. There are additional instructions for Ubuntu/Debian/Mint users for libvirt in the Getting Started guide. Update: CRC also works on Manjaro and therefore should work on any Arch Linux based distribution, too (thanks, Roberto).
 
 Start with downloading the CodeReady Containers archive for your OS and download the pull secrets to a location you remember. Extracting the CodeReady Containers archive results in an executable 'crc' which needs to be placed in your PATH. This is very similar to the 'minikube' and 'minishift' executables.
 

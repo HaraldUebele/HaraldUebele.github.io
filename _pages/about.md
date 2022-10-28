@@ -14,7 +14,7 @@ I started to work with and use “The Cloud” in 2014 with IBM Bluemix which wa
 
 ### Contact me
 
-You can find me on [Twitter](https://twitter.com/Harald_U){:target="_blank"}, [LinkedIn](https://www.linkedin.com/in/harald-uebele-9ab3ba1a4){:target="_blank"}, and [Xing](https://www.xing.com/profile/Harald_Uebele){:target="_blank"}. 
+You can find me on [LinkedIn](https://www.linkedin.com/in/harald-uebele-9ab3ba1a4){:target="_blank"} and [Xing](https://www.xing.com/profile/Harald_Uebele){:target="_blank"}. 
 
 ### External Functions, Cookies, Data Protection, GDPR
 
